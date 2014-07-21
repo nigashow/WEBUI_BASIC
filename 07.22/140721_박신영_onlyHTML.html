@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!html만 사용해서 구글플레이 도서페이지 만들기>
+  <title>Mission_only HTML</title>
+</head>
+<body>
+  <div id="header">
+    <!로고 이미지. 이미지 클릭시 구글 플레이 홈으로 이동(링크)>
+    <div id="logo">
+      <a href="https://play.google.com" target="_blank">
+        <img src="https://www.gstatic.com/android/market_images/web/play_logo_x2.png" alt="구글 플레이" width="183" height="39"/>
+      </a>
+    </div>
+    
+    <div id="search">  
+      <!검색어 입력창>
+      <div id="searchInput">
+        <form>
+          <input text/>
+        </form>
+      </div>
+      
+      <!검색버튼>
+      <div id="searchSubmit">
+        <img src="http://www.zachhamilton.com/img/searchicon.png" alt="search" height="48"/>
+      </div>
+    </div>
+    
+    <div id="top_option">
+      <div id="googlePlus">
+        <a href="http://plus.google.com">+신영</a>
+      </div>
+      <div id="otherApps">
+        <a href="otherApps">other</a>
+      </div>
+      <div id="notification">
+        <a href="notification"><img src="http://openclipart.org/image/800px/svg_to_png/189771/1388313637.png"height="44"/></a>
+      </div>
+      <div id="share">
+        <a href="공유">공유</a>
+      </div>
+      <div id="user">
+        <a href="user"><img src="https://lh5.googleusercontent.com/-ZVacuAJ4YEo/AAAAAAAAAAI/AAAAAAAAAAA/qCF_JHhG108/s32-c/photo.jpg" alt="사용자계정"/></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="navigator">
+    <! 화면 좌측에 있는 메뉴>
+    <div id="navi_left">
+      <div id="otherServices"></div>
+      <div>
+        <ul>
+          <li id="bookSection"><a href="https://play.google.com/store/books">도서</a></li>
+          <li id="mybook"><a href="https://play.google.com/books">내 책</a></li>
+          <li id="shopping"><a href="https://play.google.com/store/books">쇼핑하기</a></li>
+        </ul>
+      </div>
+    </div>
+    <! 화면 상단에 고정으로 표시되는 메뉴>
+    <div id="navi_top">
+      <div id="genre"><a href="장르">장르</a></div>
+      <div id="home"><a href="https://play.google.com/store/books">홈</a></div>
+      <div id="best"><a href="https://play.google.com/store/books/top">인기 차트</a></div>
+      <div id="new"><a href="https://play.google.com/store/books/new">신간</a></div>
+      <div id="navi_top_option">
+        <div id="navi_top_help"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAwUlEQVQ4y9WU6w3DIAyEGcEjZIQOwBAdgdEyikfoAAyRDVwTgZQQPyDKj/akkyIEn2zOIRBReNrh/6GsxEY2dS5raQrKWtgfAda77FlcKOvF3gaAzZsE7qGnCgGAEJGayndZ6ytWofUOTweOwCNYqDhp0EsoTTHG3U1SeBrUvD8HShdoTVwFDrQvQmEEqgQlQ732rbY9KE7M53BQSTuUc95tQNWRgptQc/jfN9q2f1PWOgn0H5Qa1Forhkefvp99+b/H6ZOyGDEoawAAAABJRU5ErkJggg==" alt="help"width="21" height="21"/>
+        </div>
+        <div id="navi_top_settings">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAA3klEQVQ4y2NgGE4gEYj/I+FEahg6D83QuaQawATEqkDMCOVbA/FdNEPvALEVVJ4Rqp4Jn6HZUI3XgHgNEP9DMxCG/0Hlr0H52bgMFALiN3gMeYLHkjdQ/RigDovi30DcgaRBGIg7gfgPFrV12AzVhYYXssI2HL7qwBLOuriCgA+IPyF5WQCHOl4g/gFV9xGqDy/4BVX8jIC6B1B1PwkZSHWX0iRM6/HEPi+SC3HFfi2udPoWRzr8As1ZX/CkU0FcQZBDYo66DuVn0T3vYwNz0AydTY2iLxXN0NThU1UAAJ7AjlNiNxjgAAAAAElFTkSuQmCC" alt="settings"width="21" height="21"/>
+        </div>
+      </div>
+    </div>
+
+    <! 본문에 해당하는 내용들>
+    <div id="content">
+      <! 섹션1: 주간 베스트셀러>
+      <div id="listsection1">
+        <div id="section_top1">
+          <div id="sectiontitle1">
+            <a href="https://play.google.com/store/books/collection/promotion_1001065_toppaid_bookkr">주간 베스트셀러</a>
+          </div>
+          <div id="sectionsubtitle1">
+            <a href="https://play.google.com/store/books/collection/promotion_1001065_toppaid_bookkr">한 주동안 가장 많은 사랑을 받은 도서</a>
+          </div>
+          <div id="seemore1">
+            <a href="https://play.google.com/store/books/collection/promotion_1001065_toppaid_bookkr"><button type="seemore1">더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content1">
+          <div id="sec1_book1">
+            <div id="sec1_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC"><img src="https://encrypted.google.com/books/images/frontcover/VvCTIS-i28IC?fife=w170-rw" alt="어서와 연애는 처음이지?" width="126"/></a>
+            </div>
+            <div id="sec1_book1_title"><a href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">어서와 연애는 처음이지?</a>
+            </div>
+            <div id="sec1_book1_author"><a href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">장해정</a>
+            </div>
+            <div id="sec1_book1_price">₩980</div>
+          </div>
+          <div id="sec1_book2">
+            <div id="sec1_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EC%82%AC%EC%9D%B4%ED%86%A0_%EB%8B%A4%EC%B9%B4%EC%8B%9C_%EC%9E%A1%EB%8B%B4%EC%9D%B4_%EB%8A%A5%EB%A0%A5%EC%9D%B4%EB%8B%A4?id=yA2lAgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/yA2lAgAAQBAJ?fife=w170-rw" alt="잡담이 능력이다" width="126"/></a>
+            </div>
+            <div id="sec1_book2_title"><a href="https://play.google.com/store/books/details/%EC%82%AC%EC%9D%B4%ED%86%A0_%EB%8B%A4%EC%B9%B4%EC%8B%9C_%EC%9E%A1%EB%8B%B4%EC%9D%B4_%EB%8A%A5%EB%A0%A5%EC%9D%B4%EB%8B%A4?id=yA2lAgAAQBAJ">잡담이 능력이다</a>
+            </div>
+            <div id="sec1_book2_author"><a href="https://play.google.com/store/books/author?id=%EC%82%AC%EC%9D%B4%ED%86%A0+%EB%8B%A4%EC%B9%B4%EC%8B%9C">사이토 다카시</a>
+            </div>
+            <div id="sec1_book2_price">₩9100</div>
+          </div>
+          <div id="sec1_book3">
+            <div id="sec1_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EC%BD%94%EC%9D%B4%EC%BC%80%EB%A5%98%EB%85%B8%EC%8A%A4%EC%BC%80_%EC%83%9D%EA%B0%81_%EB%B2%84%EB%A6%AC%EA%B8%B0%EC%97%B0%EC%8A%B5?id=gLCQAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/gLCQAwAAQBAJ?fife=w170-rw" alt="생각 버리기 연습" width="126"/></a>
+            </div>
+            <div id="sec1_book3_title"><a href="https://play.google.com/store/books/details/%EC%BD%94%EC%9D%B4%EC%BC%80%EB%A5%98%EB%85%B8%EC%8A%A4%EC%BC%80_%EC%83%9D%EA%B0%81_%EB%B2%84%EB%A6%AC%EA%B8%B0%EC%97%B0%EC%8A%B5?id=gLCQAwAAQBAJ">생각 버리기 연습</a>
+            </div>
+            <div id="sec1_book3_author"><a href="https://play.google.com/store/books/author?id=%EC%BD%94%EC%9D%B4%EC%BC%80%EB%A5%98%EB%85%B8%EC%8A%A4%EC%BC%80">코이케 류노스케</a>
+            </div>
+            <div id="sec1_book3_price">₩4800</div>
+          </div>
+          <div id="sec1_book4">
+            <div id="sec1_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9D%BC%EB%A0%88%EC%9D%B8%EC%A0%9C%EC%9E%84%EC%8A%A4_%EC%9D%B8%EC%83%9D%EC%9D%84_%EB%8B%A8%EC%88%9C%ED%95%98%EA%B2%8C_%EC%82%AC%EB%8A%94_100%EA%B0%80%EC%A7%80_%EB%B0%A9%EB%B2%95?id=lsHcPC7_rX8C"><img src="https://encrypted.google.com/books/images/frontcover/lsHcPC7_rX8C?fife=w170-rw" alt="인생을 단순하게 사는 100가지 방법" width="126"/></a>
+            </div>
+            <div id="sec1_book4_title"><a href="https://play.google.com/store/books/details/%EC%9D%BC%EB%A0%88%EC%9D%B8%EC%A0%9C%EC%9E%84%EC%8A%A4_%EC%9D%B8%EC%83%9D%EC%9D%84_%EB%8B%A8%EC%88%9C%ED%95%98%EA%B2%8C_%EC%82%AC%EB%8A%94_100%EA%B0%80%EC%A7%80_%EB%B0%A9%EB%B2%95?id=lsHcPC7_rX8C">인생을 단순하게 사는 100가지 방법</a>
+            </div>
+            <div id="sec1_book4_author"><a href="https://play.google.com/store/books/author?id=%EC%9D%BC%EB%A0%88%EC%9D%B8%EC%A0%9C%EC%9E%84%EC%8A%A4">일레인 제임</a></div>
+            <div id="sec1_book4_price">₩9600</div>
+          </div>
+          <div id="sec1_book5">
+            <div id="sec1_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9A%94%ED%95%9C_%EB%B3%BC%ED%94%84%EA%B0%95_%ED%8F%B0_%EA%B4%B4%ED%85%8C_%EC%A0%8A%EC%9D%80_%EB%B2%A0%EB%A5%B4%ED%85%8C%EB%A5%B4%EC%9D%98_%EC%8A%AC%ED%94%94_%ED%95%9C%EA%B8%80%ED%8C%90?id=w5ovsKXL0IQC"><img src="https://encrypted.google.com/books/images/frontcover/w5ovsKXL0IQC?fife=w170-rw" alt="젊은 베르테르의 슬픔" width="126"/></a>
+            </div>
+            <div id="sec1_book5_title"><a href="https://play.google.com/store/books/details/%EC%9A%94%ED%95%9C_%EB%B3%BC%ED%94%84%EA%B0%95_%ED%8F%B0_%EA%B4%B4%ED%85%8C_%EC%A0%8A%EC%9D%80_%EB%B2%A0%EB%A5%B4%ED%85%8C%EB%A5%B4%EC%9D%98_%EC%8A%AC%ED%94%94_%ED%95%9C%EA%B8%80%ED%8C%90?id=w5ovsKXL0IQC">젊은 베르테르의 슬픔</a>
+            </div>
+            <div id="sec1_book5_author"><a href="https://play.google.com/store/books/author?id=%EC%9A%94%ED%95%9C+%EB%B3%BC%ED%94%84%EA%B0%95+%ED%8F%B0+%EA%B4%B4%ED%85%8C">요한 볼프강 폰 괴테</a>
+            </div>
+            <div id="sec1_book5_price">₩1500</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션2: 맞춤 추천>
+      <div id="listsection2">
+        <div id="section_top2">
+          <div id="sectiontitle1">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAA%3D%3D:S:ANO1ljKIkkc&c=books">맞춤 추천</a>
+          </div>
+          <div id="seemore2">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAA%3D%3D:S:ANO1ljKIkkc&c=books"><button type="seemore1">더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content2">
+          <div id="sec2_book1">
+            <div id="sec2_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9C%A4%EB%8F%99%EC%A3%BC_%ED%95%98%EB%8A%98%EA%B3%BC_%EB%B0%94%EB%9E%8C%EA%B3%BC_%EB%B3%84%EA%B3%BC_%EC%8B%9C?id=wx7rbaBCE2MC"><img src="https://encrypted.google.com/books/images/frontcover/wx7rbaBCE2MC?fife=w170-rw" width="126"/></a>
+            </div>
+            <div id="sec2_book1_title"><a href="https://play.google.com/store/books/details/%EC%9C%A4%EB%8F%99%EC%A3%BC_%ED%95%98%EB%8A%98%EA%B3%BC_%EB%B0%94%EB%9E%8C%EA%B3%BC_%EB%B3%84%EA%B3%BC_%EC%8B%9C?id=wx7rbaBCE2MC">하늘과 바람과 별과 시</a>
+            </div>
+            <div id="sec2_book1_author"><a href="https://play.google.com/store/books/author?id=%EC%9C%A4%EB%8F%99%EC%A3%BC">윤동주</a>
+            </div>
+            <div id="sec2_book1_price">무료</div>
+          </div>
+          <div id="sec2_book2">
+            <div id="sec2_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EB%82%98%EA%B4%80%EC%A4%91_%EC%B2%AD%EC%86%8C%EB%85%84%EC%9D%84_%EC%9C%84%ED%95%9C_%EC%82%BC%EA%B5%AD%EC%A7%80_1?id=xuJ1AgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/xuJ1AgAAQBAJ?fife=w170-rw" width="126"/></a>
+            </div>
+            <div id="sec2_book2_title"><a href="https://play.google.com/store/books/details/%EB%82%98%EA%B4%80%EC%A4%91_%EC%B2%AD%EC%86%8C%EB%85%84%EC%9D%84_%EC%9C%84%ED%95%9C_%EC%82%BC%EA%B5%AD%EC%A7%80_1?id=xuJ1AgAAQBAJ">청소년을 위한 삼국지 1</a></div>
+            <div id="sec2_book2_author"><a href="https://play.google.com/store/books/author?id=%EB%82%98%EA%B4%80%EC%A4%91">나관중</a></div>
+            <div id="sec2_book2_price">무료</div>
+          </div>
+          <div id="sec2_book3">
+            <div id="sec2_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9D%B4%EC%A0%95%EC%88%99_%EB%82%B4_%EC%9D%B8%EC%83%9D%EC%9D%98_%ED%9E%88%ED%8A%B8_1?id=f9uwAgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/f9uwAgAAQBAJ?fife=w170-rw" width="126"/></a>
+            </div>
+            <div id="sec2_book3_title"><a href="https://play.google.com/store/books/details/%EC%9D%B4%EC%A0%95%EC%88%99_%EB%82%B4_%EC%9D%B8%EC%83%9D%EC%9D%98_%ED%9E%88%ED%8A%B8_1?id=f9uwAgAAQBAJ">내 인생의 히트 1</a></div>
+            <div id="sec2_book3_author"><a href="https://play.google.com/store/books/author?id=%EC%9D%B4%EC%A0%95%EC%88%99">이정숙</a></div>
+            <div id="sec2_book3_price">₩3200</div>
+          </div>
+          <div id="sec2_book4">
+            <div id="sec2_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EC%8B%A0%EC%83%88%EB%9D%BC_%EC%9D%B4%EC%9C%A0%EC%9E%88%EB%8A%94%EC%99%B8%EC%B6%9C_%ED%92%8D%EA%B8%B0%EB%AC%B8%EB%9E%80_1_%EC%A6%9D%EB%B3%B4%ED%8C%90?id=K266AgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/K266AgAAQBAJ?fife=w170-rw" width="126"/></a>
+            </div>
+            <div id="sec2_book4_title"><a href="https://play.google.com/store/books/details/%EC%8B%A0%EC%83%88%EB%9D%BC_%EC%9D%B4%EC%9C%A0%EC%9E%88%EB%8A%94%EC%99%B8%EC%B6%9C_%ED%92%8D%EA%B8%B0%EB%AC%B8%EB%9E%80_1_%EC%A6%9D%EB%B3%B4%ED%8C%90?id=K266AgAAQBAJ">풍기문란 1</a></div>
+            <div id="sec2_book4_author"><a href="https://play.google.com/store/books/author?id=%EC%8B%A0%EC%83%88%EB%9D%BC(%EC%9D%B4%EC%9C%A0%EC%9E%88%EB%8A%94%EC%99%B8%EC%B6%9C)">신새라</a></div>
+            <div id="sec2_book4_price">₩3000</div>
+          </div>
+          <div id="sec2_book5">
+            <div id="sec2_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B3%BC%ED%95%99%EB%8F%99%EC%95%84%EB%94%94%EC%A7%80%ED%84%B8%ED%8E%B8%EC%A7%91%EB%B6%80_%EC%B6%9C%ED%87%B4%EA%B7%BC_%ED%95%9C%EB%BC%98%EC%A7%80%EC%8B%9D_%EC%8B%9C%EB%A6%AC%EC%A6%88_by_%EA%B3%BC%ED%95%99%EB%8F%99%EC%95%84_%EC%B2%B4%ED%97%98%ED%8C%904?id=-V8D8w79P5MC"><img src="https://encrypted.google.com/books/images/frontcover/-V8D8w79P5MC?fife=w170-rw" width="126"/></a>
+            </div>
+            <div id="sec2_book5_title"><a href="https://play.google.com/store/books/details/%EA%B3%BC%ED%95%99%EB%8F%99%EC%95%84%EB%94%94%EC%A7%80%ED%84%B8%ED%8E%B8%EC%A7%91%EB%B6%80_%EC%B6%9C%ED%87%B4%EA%B7%BC_%ED%95%9C%EB%BC%98%EC%A7%80%EC%8B%9D_%EC%8B%9C%EB%A6%AC%EC%A6%88_by_%EA%B3%BC%ED%95%99%EB%8F%99%EC%95%84_%EC%B2%B4%ED%97%98%ED%8C%904?id=-V8D8w79P5MC">출퇴근 한뼘지식</a></div>
+            <div id="sec2_book5_author"><a href="https://play.google.com/store/books/author?id=%EA%B3%BC%ED%95%99%EB%8F%99%EC%95%84%EB%94%94%EC%A7%80%ED%84%B8%ED%8E%B8%EC%A7%91%EB%B6%80">과학동아디지털편집부</a></div>
+            <div id="sec2_book5_price">무료</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션3: 판타지/무협>
+      <div id="listsection3">
+        <div id="section_top3">
+          <div id="sectiontitle3">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFosCiZwcm9tb3Rpb25fMTAwMGVjMF9oZXJvaXNtX3NldF9kaXNjb3VudBAHGAE%3D:S:ANO1ljINeRQ&c=books">판타지/무협 최고 50% 할인</a>
+          </div>
+          <div id="sectionsubtitle3">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFosCiZwcm9tb3Rpb25fMTAwMGVjMF9oZXJvaXNtX3NldF9kaXNjb3VudBAHGAE%3D:S:ANO1ljINeRQ&c=books">모든 도서 1권은 무료로 드려요!</a>
+          </div>
+          <div id="seemore3">
+            <a href="https://play.google.com/store/books/collection/promotion_1001065_toppaid_bookkr"><button type="seemore1">더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content3">
+          <div id="sec3_book1">
+            <div id="sec3_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EB%B9%84%EA%B0%80_%EC%84%B8%ED%8A%B8_%EC%97%AD%EC%B2%9C%EB%8F%84_%EC%A0%8415%EA%B6%8C_%EC%99%84%EA%B2%B0?id=SeS5AgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/SeS5AgAAQBAJ?fife=w170-rw" alt="[세트] 역천도 (전15권/완결)" width="126"/></a>
+            </div>
+            <div id="sec3_book1_title"><a href="https://play.google.com/store/books/details/%EB%B9%84%EA%B0%80_%EC%84%B8%ED%8A%B8_%EC%97%AD%EC%B2%9C%EB%8F%84_%EC%A0%8415%EA%B6%8C_%EC%99%84%EA%B2%B0?id=SeS5AgAAQBAJ">[세트] 역천도 (전15권/완결)</a>
+            </div>
+            <div id="sec3_book1_author"><a href="https://play.google.com/store/books/author?id=%EB%B9%84%EA%B0%80">비가</a>
+            </div>
+            <div id="sec3_book1_price">₩31,500</div>
+          </div>
+          <div id="sec3_book2">
+            <div id="sec3_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B0%95%EB%8F%99%ED%98%B8_%EC%84%B8%ED%8A%B8_%EC%A0%9C%EA%B5%AD%EC%9D%98_%EA%BF%88_%EC%A0%8410%EA%B6%8C_%EC%99%84%EA%B2%B0?id=WDy9AgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/WDy9AgAAQBAJ?fife=w170-rw"alt="[세트] 제국의 꿈(전10권/완결)" width="126"/></a>
+            </div>
+            <div id="sec3_book2_title"><a href="https://play.google.com/store/books/details/%EA%B0%95%EB%8F%99%ED%98%B8_%EC%84%B8%ED%8A%B8_%EC%A0%9C%EA%B5%AD%EC%9D%98_%EA%BF%88_%EC%A0%8410%EA%B6%8C_%EC%99%84%EA%B2%B0?id=WDy9AgAAQBAJ">[세트] 제국의 꿈(전10권/완결)</a>
+            </div>
+            <div id="sec3_book2_author"><a href="https://play.google.com/store/books/author?id=%EA%B0%95%EB%8F%99%ED%98%B8">강동호</a>
+            </div>
+            <div id="sec3_book2_price">₩17,280</div>
+          </div>
+          <div id="sec3_book3">
+            <div id="sec3_book3_cover">
+              <a href="https://play.google.com/store/books/details/%ED%98%84%EB%AF%BC_%EC%84%B8%ED%8A%B8_%ED%83%80%EB%A9%94%EB%9D%BC_%EA%B3%A4_%EC%A0%848%EA%B6%8C_%EC%99%84%EA%B2%B0?id=oRq6AgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/oRq6AgAAQBAJ?fife=w170-rw" alt="[세트] 타메라 곤 (전8권/완결)" width="126"/></a>
+            </div>
+            <div id="sec3_book3_title"><a href="https://play.google.com/store/books/details/%ED%98%84%EB%AF%BC_%EC%84%B8%ED%8A%B8_%ED%83%80%EB%A9%94%EB%9D%BC_%EA%B3%A4_%EC%A0%848%EA%B6%8C_%EC%99%84%EA%B2%B0?id=oRq6AgAAQBAJ">[세트] 타메라 곤 (전8권/완결)</a>
+            </div>
+            <div id="sec3_book3_author"><a href="https://play.google.com/store/books/author?id=%ED%98%84%EB%AF%BC">현민</a>
+            </div>
+            <div id="sec3_book3_price">₩13,440</div>
+          </div>
+          <div id="sec3_book4">
+            <div id="sec3_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EB%AC%B4%EC%9E%A5_%EC%84%B8%ED%8A%B8_%EA%B0%95%ED%98%B8%EC%9C%A0%EC%A0%95_%EC%A0%846%EA%B6%8C_%EC%99%84%EA%B2%B0?id=0NO9AgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/0NO9AgAAQBAJ?fife=w170-rw" alt="[세트] 강호유정 (전6권/완결)" width="126"/></a>
+            </div>
+            <div id="sec3_book4_title"><a href="https://play.google.com/store/books/details/%EB%AC%B4%EC%9E%A5_%EC%84%B8%ED%8A%B8_%EA%B0%95%ED%98%B8%EC%9C%A0%EC%A0%95_%EC%A0%846%EA%B6%8C_%EC%99%84%EA%B2%B0?id=0NO9AgAAQBAJ">[세트] 강호유정 (전6권/완결)</a>
+            </div>
+            <div id="sec3_book4_author"><a href="https://play.google.com/store/books/author?id=%EB%AC%B4%EC%9E%A5">무장</a></div>
+            <div id="sec3_book4_price">₩14,000</div>
+          </div>
+          <div id="sec3_book5">
+            <div id="sec3_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B8%80%EC%9E%91%EC%86%8C_%EC%84%B8%ED%8A%B8_%EA%B2%80%EB%A7%88_%EC%A0%8410%EA%B6%8C_%EC%99%84%EA%B2%B0?id=4Hy7AgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/4Hy7AgAAQBAJ?fife=w170-rw" alt="[세트] 검마(전10권/완결)" width="126"/></a>
+            </div>
+            <div id="sec3_book5_title"><a href="https://play.google.com/store/books/details/%EA%B8%80%EC%9E%91%EC%86%8C_%EC%84%B8%ED%8A%B8_%EA%B2%80%EB%A7%88_%EC%A0%8410%EA%B6%8C_%EC%99%84%EA%B2%B0?id=4Hy7AgAAQBAJ">[세트] 검마(전10권/완결)</a>
+            </div>
+            <div id="sec3_book5_author"><a href="https://play.google.com/store/books/author?id=%EA%B8%80%EC%9E%91%EC%86%8C">글작소</a>
+            </div>
+            <div id="sec3_book5_price">₩17,280</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션4: 빠른 추천 받기>
+      <div id="listsection4">
+        <div id="section_top4">
+          <div id="sectiontitle4">빠른 추천 받기</div>
+          <div id="sectionsubtitle1">빠른 추천을 받으려면 아래 앱을 평가해 주세요.</div>
+        </div>
+        <div id="section_content4">
+          <div id="sec4_book_default">
+            <div id="sec4_book_default_cover">
+              <a href="https://play.google.com/store/books/details/%EC%8B%AC%ED%9B%88_%EC%83%81%EB%A1%9D%EC%88%98?id=8ofc93GLVi8C"><img src="https://encrypted.google.com/books/images/frontcover/8ofc93GLVi8C?fife=w170-rw" alt="상록수" width="126"/></a>
+            </div>
+            <div id="sec4_book_default_title">
+              <a href="https://play.google.com/store/books/details/%EC%8B%AC%ED%9B%88_%EC%83%81%EB%A1%9D%EC%88%98?id=8ofc93GLVi8C">상록수</a>
+            </div>
+            <div id="sec4_book_default_author">
+              <a href="https://play.google.com/store/books/author?id=%EC%8B%AC%ED%9B%88">심훈</a>
+            </div>
+            <div id="sec4_book_default_rating">
+            </div>
+            <div id="sec4_emptycard1">
+              <img src="data:image/png;base64,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" width="160" height="160"/>
+            </div>
+            <div id="sec4_emptycard2">
+              <img src="data:image/png;base64,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" width="160" height="160"/>
+            </div>
+            <div id="sec4_emptycard3">
+              <img src="data:image/png;base64,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" width="160" height="160"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <! 섹션5: 외국어 정복>
+      <div id="listsection5">
+        <div id="section_top5">
+          <div id="sectiontitle5">
+            <a href="https://play.google.com/store/books/collection/promotion_1001021_epub3language_bookkr">들리는 책으로 외국어 정복</a>
+          </div>
+          <div id="sectionsubtitle5">
+            <a href="https://play.google.com/store/books/collection/promotion_1001021_epub3language_bookkr">원어민 발음을 들으며 공부하세요</a>
+          </div>
+          <div id="seemore5">
+            <a href="https://play.google.com/store/books/collection/promotion_1001021_epub3language_bookkr"><button>더보기</button></a>
+          </div>
+        </div>
+        <div id="section_content5">
+          <div id="section_content5_bg">
+            <img src="https://lh3.ggpht.com/87HoAkbS5VunHQMBJSx-rmhuEE4lnPN4G1G1EuRM8nsqVLi42QCvJx8te7LK_N08vuc=h556-rw" height="289"/>
+          </div>
+          <div id="sec5_book1">
+            <div id="sec5_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9D%B8%EC%84%B8%EC%A7%84_%EC%8B%9C%EB%82%98%EA%B3%B5_%ED%86%A0%EC%9D%B5_%EC%8A%A4%ED%94%BC%ED%82%B9_%EB%A7%8C%EC%A0%90%EC%9D%98_%EB%B2%95%EC%B9%99?id=TOGiAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/TOGiAwAAQBAJ?fife=w170-rw" alt="시나공 토익 스피킹 만점의 법" width="126"/></a>
+            </div>
+            <div id="sec5_book1_title"><a href="https://play.google.com/store/books/details/%EC%9D%B8%EC%84%B8%EC%A7%84_%EC%8B%9C%EB%82%98%EA%B3%B5_%ED%86%A0%EC%9D%B5_%EC%8A%A4%ED%94%BC%ED%82%B9_%EB%A7%8C%EC%A0%90%EC%9D%98_%EB%B2%95%EC%B9%99?id=TOGiAwAAQBAJ">시나공 토익 스피킹 만점의 법칙</a>
+            </div>
+            <div id="sec5_book1_author"><a href="https://play.google.com/store/books/author?id=%EC%9D%B8%EC%84%B8%EC%A7%84">인세진</a>
+            </div>
+            <div id="sec5_book1_price">₩17,500</div>
+          </div>
+          <div id="sec5_book2">
+            <div id="sec5_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B0%95%EC%9C%A4%ED%98%9C_%ED%95%98%EB%A3%A8_3%EB%AC%B8%EC%9E%A5_%EC%98%81%EC%96%B4%EC%9D%BC%EA%B8%B0_%EB%AC%B4%EC%9E%91%EC%A0%95_%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0?id=Lq6FAgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/Lq6FAgAAQBAJ?fife=w170-rw" alt="하루 3문장 영어일기 무작정 따라하기: 31개 영작 공식을 담은 기본서와 5000개 문장을 담은 표현사전을 한 권에!" width="126"/></a>
+            </div>
+            <div id="sec5_book2_title"><a href="https://play.google.com/store/books/details/%EA%B0%95%EC%9C%A4%ED%98%9C_%ED%95%98%EB%A3%A8_3%EB%AC%B8%EC%9E%A5_%EC%98%81%EC%96%B4%EC%9D%BC%EA%B8%B0_%EB%AC%B4%EC%9E%91%EC%A0%95_%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0?id=Lq6FAgAAQBAJ">하루 3문장 영어일기 무작정 따라하기: 31개 영작 공식을 담은 기본서와 5000개 문장을 담은 표현사전을 한 권에!</a>
+            </div>
+            <div id="sec5_book2_author"><a href="https://play.google.com/store/books/author?id=%EA%B0%95%EC%9C%A4%ED%98%9C">강윤혜</a>
+            </div>
+            <div id="sec5_book2_price">₩15,400</div>
+          </div>
+          <div id="sec5_book3">
+            <div id="sec5_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EC%B0%A8%ED%98%95%EC%84%9D_%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4_%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94_%EC%9D%B4%EB%A9%94%EC%9D%BC_%ED%95%B5%EC%8B%AC%ED%8C%A8%ED%84%B4_233?id=jQCfAgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/jQCfAgAAQBAJ?fife=w170-rw" alt="비즈니스 영어회화 & 이메일 핵심패턴 233: 비즈니스 회화와 이메일을 패턴으로 정복한다!" width="126"/></a>
+            </div>
+            <div id="sec5_book3_title"><a href="https://play.google.com/store/books/details/%EC%B0%A8%ED%98%95%EC%84%9D_%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4_%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94_%EC%9D%B4%EB%A9%94%EC%9D%BC_%ED%95%B5%EC%8B%AC%ED%8C%A8%ED%84%B4_233?id=jQCfAgAAQBAJ">비즈니스 영어회화 & 이메일 핵심패턴 233: 비즈니스 회화와 이메일을 패턴으로 정복한다!</a>
+            </div>
+            <div id="sec5_book3_author"><a href="https://play.google.com/store/books/author?id=%EC%B0%A8%ED%98%95%EC%84%9D">차형석</a>
+            </div>
+            <div id="sec5_book3_price">₩11,200</div>
+          </div>
+          <div id="sec5_book4">
+            <div id="sec5_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EB%B0%B1%EC%84%A0%EC%97%BD_%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94_%ED%95%B5%EC%8B%AC%ED%8C%A8%ED%84%B4_233_%EA%B8%B0%EC%B4%88%ED%8E%B8?id=rP6eAgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/rP6eAgAAQBAJ?fife=w300-rw" alt="영어회화 핵심패턴 233 기초편: 중학교 영어 실력으로 일상회화가 해결된다!" width="126"/></a>
+            </div>
+            <div id="sec5_book4_title"><a href="https://play.google.com/store/books/details/%EB%B0%B1%EC%84%A0%EC%97%BD_%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94_%ED%95%B5%EC%8B%AC%ED%8C%A8%ED%84%B4_233_%EA%B8%B0%EC%B4%88%ED%8E%B8?id=rP6eAgAAQBAJ">영어회화 핵심패턴 233 기초편: 중학교 영어 실력으로 일상회화가 해결된다!</a>
+            </div>
+            <div id="sec5_book4_author"><a href="https://play.google.com/store/books/author?id=%EB%B0%B1%EC%84%A0%EC%97%BD">백선엽</a></div>
+            <div id="sec5_book4_price">₩11,200</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션6: 소설/문학>
+      <div id="listsection6">
+        <div id="section_top6">
+          <div id="sectiontitle6">
+            <a href="https://play.google.com/store/recommended?sp=CAUYHioJY29sbF8xNjgyMAA%3D:S:ANO1ljIOAPw&c=books">소설/문학</a>
+          </div>
+          <div id="sectionsubtitle6">
+            <a href="https://play.google.com/store/recommended?sp=CAUYHioJY29sbF8xNjgyMAA%3D:S:ANO1ljIOAPw&c=books">맞춤 추천 도서</a>
+          </div>
+          <div id="seemore6">
+            <a href="https://play.google.com/store/recommended?sp=CAUYHioJY29sbF8xNjgyMAA%3D:S:ANO1ljIOAPw&c=books"><button>더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content6">
+          <div id="sec6_book1">
+            <div id="sec6_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B9%80%EC%9C%A4%ED%95%98_%EC%95%A0%EC%9D%B8_%EB%A7%8C%EB%93%A4%EA%B8%B0_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_01%EA%B6%8C?id=4DhCxf7zc-oC"><img src="https://encrypted.google.com/books/images/frontcover/4DhCxf7zc-oC?fife=w170-rw" alt="애인 만들기 프로젝트 01권" width="126"/></a>
+            </div>
+            <div id="sec6_book1_title"><a href="https://play.google.com/store/books/details/%EA%B9%80%EC%9C%A4%ED%95%98_%EC%95%A0%EC%9D%B8_%EB%A7%8C%EB%93%A4%EA%B8%B0_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_01%EA%B6%8C?id=4DhCxf7zc-oC">애인 만들기 프로젝트 01권</a>
+            </div>
+            <div id="sec6_book1_author"><a href="https://play.google.com/store/books/author?id=%EA%B9%80%EC%9C%A4%ED%95%98">김윤하</a>
+            </div>
+            <div id="sec6_book1_price">무료</div>
+          </div>
+          <div id="sec6_book2">
+            <div id="sec6_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EB%8B%A4%EC%83%9D%EC%86%8C%ED%99%9C_%EC%82%B6%EC%9D%98_%EB%AC%B4%EA%B2%8C_%EC%A4%84%EC%9D%B4%EA%B8%B0?id=B0XhUEab2sIC"><img src="https://encrypted.google.com/books/images/frontcover/B0XhUEab2sIC?fife=w170-rw" alt="삶의 무게, 줄이기" width="126"/></a>
+            </div>
+            <div id="sec6_book2_title"><a href="https://play.google.com/store/books/details/%EB%8B%A4%EC%83%9D%EC%86%8C%ED%99%9C_%EC%82%B6%EC%9D%98_%EB%AC%B4%EA%B2%8C_%EC%A4%84%EC%9D%B4%EA%B8%B0?id=B0XhUEab2sIC">삶의 무게, 줄이기</a>
+            </div>
+            <div id="sec6_book2_author"><a href="https://play.google.com/store/books/author?id=%EB%8B%A4%EC%83%9D%EC%86%8C%ED%99%9C">다생소활</a>
+            </div>
+            <div id="sec6_book2_price">무료</div>
+          </div>
+          <div id="sec6_book3">
+            <div id="sec6_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EC%A1%B0%EB%82%98%EB%8B%A8_%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9A%B0%EB%93%9C_%EC%82%AC%EB%A7%88%EB%A5%B4%EC%B9%B8%ED%8A%B8%EC%9D%98_%EB%A7%88%EB%B2%95_%EB%AA%A9%EA%B1%B8%EC%9D%B4?id=ORlMf1Fp7BAC"><img src="https://encrypted.google.com/books/images/frontcover/ORlMf1Fp7BAC?fife=w170-rw" alt="사마르칸트의 마법 목걸이" width="126"/></a>
+            </div>
+            <div id="sec6_book3_title"><a href="https://play.google.com/store/books/details/%EC%A1%B0%EB%82%98%EB%8B%A8_%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9A%B0%EB%93%9C_%EC%82%AC%EB%A7%88%EB%A5%B4%EC%B9%B8%ED%8A%B8%EC%9D%98_%EB%A7%88%EB%B2%95_%EB%AA%A9%EA%B1%B8%EC%9D%B4?id=ORlMf1Fp7BAC">사마르칸트의 마법 목걸이</a>
+            </div>
+            <div id="sec6_book3_author"><a href="https://play.google.com/store/books/author?id=%EC%A1%B0%EB%82%98%EB%8B%A8+%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9A%B0%EB%93%9C">조나단 스트라우드</a>
+            </div>
+            <div id="sec6_book3_price">무료</div>
+          </div>
+          <div id="sec6_book4">
+            <div id="sec6_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9E%84%ED%97%88%EA%B7%9C_%EC%97%90%EB%9C%A8%EB%9E%91%EC%A0%9C_1?id=TZ0X9CmWmesC"><img src="https://encrypted.google.com/books/images/frontcover/TZ0X9CmWmesC?fife=w170-rw" alt="에뜨랑제1" width="126"/></a>
+            </div>
+            <div id="sec6_book4_title"><a href="https://play.google.com/store/books/details/%EC%9E%84%ED%97%88%EA%B7%9C_%EC%97%90%EB%9C%A8%EB%9E%91%EC%A0%9C_1?id=TZ0X9CmWmesC">에뜨랑제1</a>
+            </div>
+            <div id="sec6_book4_author"><a href="https://play.google.com/store/books/author?id=%EC%9E%84%ED%97%88%EA%B7%9C">임허규</a></div>
+            <div id="sec6_book4_price">무료</div>
+          </div>
+          <div id="sec6_book5">
+            <div id="sec6_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B8%B0_%EB%93%9C_%EB%AA%A8%ED%8C%8C%EC%83%81_Two_Friends_%EC%98%81%EC%96%B4%EB%A1%9C_%EC%9D%BD%EB%8A%94_%EC%84%B8%EA%B3%84%EB%AC%B8%ED%95%99?id=4Ceyott9GzMC"><img src="https://encrypted.google.com/books/images/frontcover/4Ceyott9GzMC?fife=w170-rw" alt="Two Friends (영어로 읽는 세계문학)" width="126"/></a>
+            </div>
+            <div id="sec6_book5_title"><a href="https://play.google.com/store/books/details/%EA%B8%B0_%EB%93%9C_%EB%AA%A8%ED%8C%8C%EC%83%81_Two_Friends_%EC%98%81%EC%96%B4%EB%A1%9C_%EC%9D%BD%EB%8A%94_%EC%84%B8%EA%B3%84%EB%AC%B8%ED%95%99?id=4Ceyott9GzMC">Two Friends (영어로 읽는 세계문학)</a>
+            </div>
+            <div id="sec6_book5_author"><a href="https://play.google.com/store/books/author?id=%EA%B8%B0+%EB%93%9C+%EB%AA%A8%ED%8C%8C%EC%83%81">기 드 모파상</a>
+            </div>
+            <div id="sec6_book5_price">무료</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션7: 로맨스 소설 할인전>
+      <div id="listsection7">
+        <div id="section_top7">
+          <div id="sectiontitle7">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFouCihwcm9tb3Rpb25fMTAwMGZjNF9yb21hbmNlZGlzY291bnRfYm9va2tyEAcYAQ%3D%3D:S:ANO1ljKwy4U&c=books">로맨스 소설 할인전</a>
+          </div>
+          <div id="sectionsubtitle7">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFouCihwcm9tb3Rpb25fMTAwMGZjNF9yb21hbmNlZGlzY291bnRfYm9va2tyEAcYAQ%3D%3D:S:ANO1ljKwy4U&c=books">달콤 살벌한 로맨스 최고 50% 할인</a>
+          </div>
+          <div id="seemore7">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFouCihwcm9tb3Rpb25fMTAwMGZjNF9yb21hbmNlZGlzY291bnRfYm9va2tyEAcYAQ%3D%3D:S:ANO1ljKwy4U&c=books"><button>더보기</button></a>
+          </div>
+        </div>
+        <div id="section_content7">
+          <div id="section_content7_bg">
+            <img src="https://lh6.ggpht.com/BOeQdkgmgRa9qW9qilacIGgRQa3SYqFZFf3LGNpJK9DbWxRdsUFvNNw_3YxwBQumqA=h556-rw" height="289"/>
+          </div>
+          <div id="sec7_book1">
+            <div id="sec7_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B9%80%ED%98%B8%EC%A0%95_%ED%95%98%EC%96%80%EC%B9%B4%EB%9D%BC_%EB%8D%94_%ED%83%80%EA%B2%9F_The_Target_%EB%AC%B4%EC%82%AD%EC%A0%9C%ED%8C%90?id=EP2vAgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/EP2vAgAAQBAJ?fife=w170-rw" alt="더 타겟 (The Target) (무삭제판)" width="126"/></a>
+            </div>
+            <div id="sec7_book1_title"><a href="https://play.google.com/store/books/details/%EA%B9%80%ED%98%B8%EC%A0%95_%ED%95%98%EC%96%80%EC%B9%B4%EB%9D%BC_%EB%8D%94_%ED%83%80%EA%B2%9F_The_Target_%EB%AC%B4%EC%82%AD%EC%A0%9C%ED%8C%90?id=EP2vAgAAQBAJ">더 타겟 (The Target) (무삭제판)</a>
+            </div>
+            <div id="sec7_book1_author"><a href="https://play.google.com/store/books/author?id=%EA%B9%80%ED%98%B8%EC%A0%95(%ED%95%98%EC%96%80%EC%B9%B4%EB%9D%BC)">김호정</a>
+            </div>
+            <div id="sec7_book1_price">₩1,750</div>
+          </div>
+          <div id="sec7_book2">
+            <div id="sec7_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9D%B4%EA%B8%B0%EC%98%A5_%EC%84%A0%ED%83%9D?id=umewAgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/umewAgAAQBAJ?fife=w170-rw" alt="선택" width="126"/></a>
+            </div>
+            <div id="sec7_book2_title"><a href="https://play.google.com/store/books/details/%EC%9D%B4%EA%B8%B0%EC%98%A5_%EC%84%A0%ED%83%9D?id=umewAgAAQBAJ">선택</a>
+            </div>
+            <div id="sec7_book2_author"><a href="https://play.google.com/store/books/author?id=%EC%9D%B4%EA%B8%B0%EC%98%A5">이기옥</a>
+            </div>
+            <div id="sec7_book2_price">₩1,500</div>
+          </div>
+          <div id="sec7_book3">
+            <div id="sec7_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B9%80%EB%AF%BC_%ED%83%9C%EC%96%91%EC%97%90_%EC%A0%96%EB%8B%A4?id=Xx22AgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/Xx22AgAAQBAJ?fife=w170-rw" alt="태양에 젖다" width="126"/></a>
+            </div>
+            <div id="sec7_book3_title"><a href="https://play.google.com/store/books/details/%EA%B9%80%EB%AF%BC_%ED%83%9C%EC%96%91%EC%97%90_%EC%A0%96%EB%8B%A4?id=Xx22AgAAQBAJ">태양에 젖다</a>
+            </div>
+            <div id="sec7_book3_author"><a href="https://play.google.com/store/books/author?id=%EA%B9%80%EB%AF%BC">김민</a>
+            </div>
+            <div id="sec7_book3_price">₩1,750</div>
+          </div>
+          <div id="sec7_book4">
+            <div id="sec7_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8%EC%95%84%EB%82%B4_%EC%97%AC%EB%A6%84_%EC%95%A0%EC%9D%B8_%EA%B0%9C%EC%A0%95%ED%8C%90?id=lZi0AgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/lZi0AgAAQBAJ?fife=w170-rw" alt="여름 애인(개정판)" width="126"/></a>
+            </div>
+            <div id="sec7_book4_title"><a href="https://play.google.com/store/books/details/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8%EC%95%84%EB%82%B4_%EC%97%AC%EB%A6%84_%EC%95%A0%EC%9D%B8_%EA%B0%9C%EC%A0%95%ED%8C%90?id=lZi0AgAAQBAJ">여름 애인(개정판)</a>
+            </div>
+            <div id="sec7_book4_author"><a href="https://play.google.com/store/books/author?id=%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C%EC%98%A8%EC%95%84%EB%82%B4">지옥에서온아내</a></div>
+            <div id="sec7_book4_price">₩1,750</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션8: 경영/경제>
+      <div id="listsection8">
+        <div id="section_top8">
+          <div id="sectiontitle8">
+            <a href="https://play.google.com/store/recommended?sp=CAUYHioJY29sbF8xMjA1MAA%3D:S:ANO1ljIVQ9E&c=books">경영/경제</a>
+          </div>
+          <div id="sectionsubtitle8">
+            <a href="https://play.google.com/store/recommended?sp=CAUYHioJY29sbF8xMjA1MAA%3D:S:ANO1ljIVQ9E&c=books">맞춤 추천 도서</a>
+          </div>
+          <div id="seemore8">
+            <a href="https://play.google.com/store/recommended?sp=CAUYHioJY29sbF8xMjA1MAA%3D:S:ANO1ljIVQ9E&c=books"><button8>더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content8">
+          <div id="sec8_book1">
+            <div id="sec8_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EB%B0%B1%EB%82%98%EB%9E%98_%EC%B9%B4%ED%8E%98%EC%B0%BD%EC%97%85_%EB%81%9D%ED%8C%90%EC%99%95_%EB%9D%BC%EB%96%BC%ED%82%B9_%EC%99%80%EC%82%AC%EB%B9%84%EB%9D%BC%EB%96%BC%EC%9D%98_%EA%B3%A0%ED%96%A5_%EB%9D%BC%EB%96%BC%ED%82%B9_%EC%8A%A4%ED%86%A0%EB%A6%AC?id=emKkyCxTV8oC"><img src="https://encrypted.google.com/books/images/frontcover/emKkyCxTV8oC?fife=w170-rw" alt="카페창업 끝판왕 라떼킹 - 와사비라떼의 고향 라떼킹 스토리" width="126"/></a>
+            </div>
+            <div id="sec8_book1_title"><a href="https://play.google.com/store/books/details/%EB%B0%B1%EB%82%98%EB%9E%98_%EC%B9%B4%ED%8E%98%EC%B0%BD%EC%97%85_%EB%81%9D%ED%8C%90%EC%99%95_%EB%9D%BC%EB%96%BC%ED%82%B9_%EC%99%80%EC%82%AC%EB%B9%84%EB%9D%BC%EB%96%BC%EC%9D%98_%EA%B3%A0%ED%96%A5_%EB%9D%BC%EB%96%BC%ED%82%B9_%EC%8A%A4%ED%86%A0%EB%A6%AC?id=emKkyCxTV8oC">카페창업 끝판왕 라떼킹 - 와사비라떼의 고향 라떼킹 스토리</a>
+            </div>
+            <div id="sec8_book1_author"><a href="https://play.google.com/store/books/author?id=%EB%B0%B1%EB%82%98%EB%9E%98">백나래</a>
+            </div>
+            <div id="sec8_book1_price">무료</div>
+          </div>
+          <div id="sec8_book2">
+            <div id="sec8_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EC%B5%9C%EA%B4%91%EC%84%9D_%EB%B6%80%EB%8F%99%EC%82%B0%EA%B2%BD%EB%A7%A4%EC%99%80_%EA%B3%B5%EC%9C%A0%EB%AC%BC%EB%B6%84%ED%95%A0?id=tuIub2UK68MC"><img src="https://encrypted.google.com/books/images/frontcover/tuIub2UK68MC?fife=w170-rw" alt="부동산경매와 공유물분할" width="126"/></a>
+            </div>
+            <div id="sec8_book2_title"><a href="https://play.google.com/store/books/details/%EC%B5%9C%EA%B4%91%EC%84%9D_%EB%B6%80%EB%8F%99%EC%82%B0%EA%B2%BD%EB%A7%A4%EC%99%80_%EA%B3%B5%EC%9C%A0%EB%AC%BC%EB%B6%84%ED%95%A0?id=tuIub2UK68MC">부동산경매와 공유물분할</a>
+            </div>
+            <div id="sec8_book2_author"><a href="https://play.google.com/store/books/author?id=%EC%B5%9C%EA%B4%91%EC%84%9D">최광석</a>
+            </div>
+            <div id="sec8_book2_price">무료</div>
+          </div>
+          <div id="sec8_book3">
+            <div id="sec8_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B9%80%EC%9E%AC%EC%97%B0_%EC%86%8C%EC%85%9C_%EC%9B%B9%EC%9D%B4%EB%8B%A4?id=rHP3PUxcV64C"><img src="https://encrypted.google.com/books/images/frontcover/rHP3PUxcV64C?fife=w170-rw" alt="소셜 웹이다" width="126"/></a>
+            </div>
+            <div id="sec8_book3_title"><a href="https://play.google.com/store/books/details/%EA%B9%80%EC%9E%AC%EC%97%B0_%EC%86%8C%EC%85%9C_%EC%9B%B9%EC%9D%B4%EB%8B%A4?id=rHP3PUxcV64C">소셜 웹이다</a>
+            </div>
+            <div id="sec8_book3_author"><a href="https://play.google.com/store/books/author?id=%EA%B9%80%EC%9E%AC%EC%97%B0">김재연</a>
+            </div>
+            <div id="sec8_book3_price">무료</div>
+          </div>
+          <div id="sec8_book4">
+            <div id="sec8_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0_%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0%EC%9D%98_%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0?id=g7oy5NXd890C"><img src="https://encrypted.google.com/books/images/frontcover/g7oy5NXd890C?fife=w170-rw" alt="데일 카네기의 인간관계론" width="126"/></a>
+            </div>
+            <div id="sec8_book4_title"><a href="https://play.google.com/store/books/details/%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0_%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0%EC%9D%98_%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0?id=g7oy5NXd890C">데일 카네기의 인간관계론</a>
+            </div>
+            <div id="sec8_book4_author"><a href="https://play.google.com/store/books/author?id=%EB%8D%B0%EC%9D%BC+%EC%B9%B4%EB%84%A4%EA%B8%B0">데일 카네기</a></div>
+            <div id="sec8_book4_price">₩3,000</div>
+          </div>
+          <div id="sec8_book5">
+            <div id="sec8_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0_%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0%EC%9D%98_%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0?id=g7oy5NXd890C"><img src="https://encrypted.google.com/books/images/frontcover/_MAVybFGzgAC?fife=w170-rw" alt="장미와 찔레 1: 미래를 바꾸는 두 가지 선택" width="126"/></a>
+            </div>
+            <div id="sec8_book5_title"><a href="https://play.google.com/store/books/details/%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0_%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0%EC%9D%98_%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0?id=g7oy5NXd890C">장미와 찔레 1: 미래를 바꾸는 두 가지 선택</a>
+            </div>
+            <div id="sec8_book5_author"><a href="https://play.google.com/store/books/author?id=%EC%A1%B0%EB%8F%99%EC%84%B1">조동성</a>
+            </div>
+            <div id="sec8_book5_price">무료</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션9: 금주의 Play 추천 도서>
+      <div id="listsection9">
+        <div id="section_top9">
+          <div id="sectiontitle9">
+            <a href="https://play.google.com/store/books/collection/promotion_100105a_play_picks_bookkr">금주의 Play 추천 도서</a>
+          </div>
+          <div id="sectionsubtitle9">
+            <a href="https://play.google.com/store/books/collection/promotion_100105a_play_picks_bookkr">에디터가 선택한 10권의 책!</a>
+          </div>
+          <div id="seemore9">
+            <a href="https://play.google.com/store/books/collection/promotion_100105a_play_picks_bookkr"><button>더보기</button></a>
+          </div>
+        </div>
+        <div id="section_content9">
+          <div id="section_content9_bg">
+            <img src="https://lh3.ggpht.com/0N3dpzyZYb0dExR3dBSWZ5V08F85qZBFPp9u1KgyMUErZwsnIVXFnB-Ameh1QUQppg=h556-rw" height="289"/>
+          </div>
+          <div id="sec9_book1">
+            <div id="sec9_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EB%84%AC%EB%A0%88_%EB%85%B8%EC%9D%B4%ED%95%98%EC%9A%B0%EC%8A%A4_%EC%83%81%EC%96%B4%EC%9D%98_%EB%8F%84%EC%8B%9C_1_2%EA%B6%8C_%EC%9D%B4%EB%B2%A4%ED%8A%B8_%ED%95%A9%EB%B3%B8?id=kN0EBAAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/kN0EBAAAQBAJ?fife=w170-rw" alt="상어의 도시 1 [+2권 이벤트 합본]" width="126"/></a>
+            </div>
+            <div id="sec9_book1_title"><a href="https://play.google.com/store/books/details/%EB%84%AC%EB%A0%88_%EB%85%B8%EC%9D%B4%ED%95%98%EC%9A%B0%EC%8A%A4_%EC%83%81%EC%96%B4%EC%9D%98_%EB%8F%84%EC%8B%9C_1_2%EA%B6%8C_%EC%9D%B4%EB%B2%A4%ED%8A%B8_%ED%95%A9%EB%B3%B8?id=kN0EBAAAQBAJ">상어의 도시 1 [+2권 이벤트 합본]</a>
+            </div>
+            <div id="sec9_book1_author"><a href="https://play.google.com/store/books/author?id=%EB%84%AC%EB%A0%88+%EB%85%B8%EC%9D%B4%ED%95%98%EC%9A%B0%EC%8A%A4">넬레 노이하우스</a>
+            </div>
+            <div id="sec9_book1_price">₩6,900</div>
+          </div>
+          <div id="sec9_book2">
+            <div id="sec9_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9D%B4%EA%B8%B0%EC%98%A5_%EC%84%A0%ED%83%9D?id=umewAgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/umewAgAAQBAJ?fife=w170-rw" alt="선택" width="126"/></a>
+            </div>
+            <div id="sec9_book2_title"><a href="https://play.google.com/store/books/details/%EC%9D%B4%EA%B8%B0%EC%98%A5_%EC%84%A0%ED%83%9D?id=umewAgAAQBAJ">선택</a>
+            </div>
+            <div id="sec9_book2_author"><a href="https://play.google.com/store/books/author?id=%EC%9D%B4%EA%B8%B0%EC%98%A5">이기옥</a>
+            </div>
+            <div id="sec9_book2_price">₩1,500</div>
+          </div>
+          <div id="sec9_book3">
+            <div id="sec9_book3_cover">
+              <a href="https://play.google.com/store/books/details/%ED%95%A8%EA%B7%9C%EC%A0%95_%EC%84%9C%EB%A5%B8_%EC%82%B4_%EA%B0%90%EC%A0%95%EA%B3%B5%EB%B6%80?id=9L_zAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/9L_zAwAAQBAJ?fife=w170-rw" alt="서른 살 감정공부: 감정 때문에 일이 힘든 당신에게" width="126"/></a>
+            </div>
+            <div id="sec9_book3_title"><a href="https://play.google.com/store/books/details/%ED%95%A8%EA%B7%9C%EC%A0%95_%EC%84%9C%EB%A5%B8_%EC%82%B4_%EA%B0%90%EC%A0%95%EA%B3%B5%EB%B6%80?id=9L_zAwAAQBAJ">서른 살 감정공부: 감정 때문에 일이 힘든 당신에게</a>
+            </div>
+            <div id="sec9_book3_author"><a href="https://play.google.com/store/books/author?id=%ED%95%A8%EA%B7%9C%EC%A0%95">함규정</a>
+            </div>
+            <div id="sec9_book3_price">₩8,694</div>
+          </div>
+          <div id="sec9_book4">
+            <div id="sec9_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EC%BC%84_%EC%8B%9C%EA%B1%B8_%EB%AF%B8%EC%B9%9C%EB%93%AF%EC%9D%B4_%EC%8B%AC%ED%94%8C?id=hlb5AwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/hlb5AwAAQBAJ?fife=w170-rw" alt="미친듯이 심플: 스티브 잡스, 불멸의 경영 무기" width="126"/></a>
+            </div>
+            <div id="sec9_book4_title"><a href="https://play.google.com/store/books/details/%EC%BC%84_%EC%8B%9C%EA%B1%B8_%EB%AF%B8%EC%B9%9C%EB%93%AF%EC%9D%B4_%EC%8B%AC%ED%94%8C?id=hlb5AwAAQBAJ">미친듯이 심플: 스티브 잡스, 불멸의 경영 무기</a>
+            </div>
+            <div id="sec9_book4_author"><a href="https://play.google.com/store/books/author?id=%EC%BC%84+%EC%8B%9C%EA%B1%B8">켄 시걸</a></div>
+            <div id="sec9_book4_price">₩10,100</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션10: 5,000원 이하 책 모음>
+      <div id="listsection10">
+        <div id="section_top10">
+          <div id="sectiontitle10">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFozCi1wcm9tb3Rpb25fMTAwMGY2OV9ib29rdW5kZXI1a2tyd19kYXNoX2Jvb2tza3IQBxgB:S:ANO1ljJeeGA&c=books">5,000원 이하 책 모음</a>
+          </div>
+          <div id="sectionsubtitle10">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFozCi1wcm9tb3Rpb25fMTAwMGY2OV9ib29rdW5kZXI1a2tyd19kYXNoX2Jvb2tza3IQBxgB:S:ANO1ljJeeGA&c=books">부담없이 즐기는 마음의 양</a>
+          </div>
+          <div id="seemore10">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFozCi1wcm9tb3Rpb25fMTAwMGY2OV9ib29rdW5kZXI1a2tyd19kYXNoX2Jvb2tza3IQBxgB:S:ANO1ljJeeGA&c=books"><button>더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content10">
+          <div id="sec10_book1">
+            <div id="sec10_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EC%95%99%ED%88%AC%EC%95%88_%EB%93%9C_%EC%83%9D%ED%85%8D%EC%A5%90%ED%8E%98%EB%A6%AC_%EC%96%B4%EB%A6%B0_%EC%99%95%EC%9E%90_%ED%95%9C%EA%B8%80%ED%8C%90?id=9oklu6-L5nMC"><img src="https://encrypted.google.com/books/images/frontcover/9oklu6-L5nMC?fife=w170-rw" alt="어린 왕자 (한글판)" width="126"/></a>
+            </div>
+            <div id="sec10_book1_title"><a href="https://play.google.com/store/books/details/%EC%95%99%ED%88%AC%EC%95%88_%EB%93%9C_%EC%83%9D%ED%85%8D%EC%A5%90%ED%8E%98%EB%A6%AC_%EC%96%B4%EB%A6%B0_%EC%99%95%EC%9E%90_%ED%95%9C%EA%B8%80%ED%8C%90?id=9oklu6-L5nMC">어린 왕자 (한글판)</a>
+            </div>
+            <div id="sec10_book1_author"><a href="https://play.google.com/store/books/author?id=%EC%95%99%ED%88%AC%EC%95%88+%EB%93%9C+%EC%83%9D%ED%85%8D%EC%A5%90%ED%8E%98%EB%A6%AC">앙투안 드 생텍쥐페리</a>
+            </div>
+            <div id="sec10_book1_price">₩1,500</div>
+          </div>
+          <div id="sec10_book2">
+            <div id="sec10_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9A%94%ED%95%9C_%EB%B3%BC%ED%94%84%EA%B0%95_%ED%8F%B0_%EA%B4%B4%ED%85%8C_%EC%A0%8A%EC%9D%80_%EB%B2%A0%EB%A5%B4%ED%85%8C%EB%A5%B4%EC%9D%98_%EC%8A%AC%ED%94%94_%ED%95%9C%EA%B8%80%ED%8C%90?id=w5ovsKXL0IQC"><img src="https://encrypted.google.com/books/images/frontcover/w5ovsKXL0IQC?fife=w170-rw" alt="젊은 베르테르의 슬픔 (한글판)" width="126"/></a>
+            </div>
+            <div id="sec10_book2_title"><a href="https://play.google.com/store/books/details/%EC%9A%94%ED%95%9C_%EB%B3%BC%ED%94%84%EA%B0%95_%ED%8F%B0_%EA%B4%B4%ED%85%8C_%EC%A0%8A%EC%9D%80_%EB%B2%A0%EB%A5%B4%ED%85%8C%EB%A5%B4%EC%9D%98_%EC%8A%AC%ED%94%94_%ED%95%9C%EA%B8%80%ED%8C%90?id=w5ovsKXL0IQC">젊은 베르테르의 슬픔 (한글판)</a>
+            </div>
+            <div id="sec10_book2_author"><a href="https://play.google.com/store/books/author?id=%EC%9A%94%ED%95%9C+%EB%B3%BC%ED%94%84%EA%B0%95+%ED%8F%B0+%EA%B4%B4%ED%85%8C">요한 볼프강 폰 괴테</a>
+            </div>
+            <div id="sec10_book2_price">₩1,500</div>
+          </div>
+          <div id="sec10_book3">
+            <div id="sec10_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0_%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0%EC%9D%98_%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0?id=g7oy5NXd890C"><img src="https://encrypted.google.com/books/images/frontcover/g7oy5NXd890C?fife=w170-rw" alt="데일 카네기의 인간관계론" width="126"/></a>
+            </div>
+            <div id="sec10_book3_title"><a href="https://play.google.com/store/books/details/%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0_%EB%8D%B0%EC%9D%BC_%EC%B9%B4%EB%84%A4%EA%B8%B0%EC%9D%98_%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0?id=g7oy5NXd890C">데일 카네기의 인간관계론</a>
+            </div>
+            <div id="sec10_book3_author"><a href="https://play.google.com/store/books/author?id=%EB%8D%B0%EC%9D%BC+%EC%B9%B4%EB%84%A4%EA%B8%B0">데일 카네기</a>
+            </div>
+            <div id="sec10_book3_price">₩3,000</div>
+          </div>
+          <div id="sec10_book4">
+            <div id="sec10_book4_cover">
+              <a href="https://play.google.com/store/books/details/%ED%94%84%EB%9E%9C%EC%8B%9C%EC%8A%A4_%EC%8A%A4%EC%BD%A7_%ED%94%BC%EC%B8%A0%EC%A0%9C%EB%9F%B4%EB%93%9C_%EC%9C%84%EB%8C%80%ED%95%9C_%EA%B0%9C%EC%B8%A0%EB%B9%84_%ED%95%9C%EA%B8%80%ED%8C%90?id=lXI0obgqh90C"><img src="https://encrypted.google.com/books/images/frontcover/lXI0obgqh90C?fife=w170-rw" alt="위대한 개츠비 (한글판)" width="126"/></a>
+            </div>
+            <div id="sec10_book4_title"><a href="https://play.google.com/store/books/details/%ED%94%84%EB%9E%9C%EC%8B%9C%EC%8A%A4_%EC%8A%A4%EC%BD%A7_%ED%94%BC%EC%B8%A0%EC%A0%9C%EB%9F%B4%EB%93%9C_%EC%9C%84%EB%8C%80%ED%95%9C_%EA%B0%9C%EC%B8%A0%EB%B9%84_%ED%95%9C%EA%B8%80%ED%8C%90?id=lXI0obgqh90C">위대한 개츠비 (한글판)</a>
+            </div>
+            <div id="sec10_book4_author"><a href="https://play.google.com/store/books/author?id=%ED%94%84%EB%9E%9C%EC%8B%9C%EC%8A%A4+%EC%8A%A4%EC%BD%A7+%ED%94%BC%EC%B8%A0%EC%A0%9C%EB%9F%B4%EB%93%9C">프랜시스 스콧 피츠제럴드</a></div>
+            <div id="sec10_book4_price">₩2,000</div>
+          </div>
+          <div id="sec10_book5">
+            <div id="sec10_book5_cover">
+              <a href="https://play.google.com/store/books/details/%ED%97%A4%EB%A5%B4%EB%A7%8C_%ED%97%A4%EC%84%B8_%EB%8D%B0%EB%AF%B8%EC%95%88_%ED%95%9C%EA%B8%80%ED%8C%90?id=XOVYrTooVSMC"><img src="https://encrypted.google.com/books/images/frontcover/XOVYrTooVSMC?fife=w170-rw" alt="데미안(한글판)" width="126"/></a>
+            </div>
+            <div id="sec10_book5_title"><a href="https://play.google.com/store/books/details/%ED%97%A4%EB%A5%B4%EB%A7%8C_%ED%97%A4%EC%84%B8_%EB%8D%B0%EB%AF%B8%EC%95%88_%ED%95%9C%EA%B8%80%ED%8C%90?id=XOVYrTooVSMC">데미안(한글판)</a>
+            </div>
+            <div id="sec10_book5_author"><a href="https://play.google.com/store/books/author?id=%ED%97%A4%EB%A5%B4%EB%A7%8C+%ED%97%A4%EC%84%B8">헤르만 헤세</a>
+            </div>
+            <div id="sec10_book5_price">₩1500</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션11: 건강한 몸, 그리고 마음>
+      <div id="listsection11">
+        <div id="section_top11">
+          <div id="sectiontitle11">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFowCipwcm9tb3Rpb25fMTAwMTAyY19iZXR0ZXJsaXZpbmdfZXZnX2Jvb2tza3IQBxgB:S:ANO1ljKHquo&c=books">건강한 몸, 그리고 마음</a>
+          </div>
+          <div id="sectionsubtitle11">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFowCipwcm9tb3Rpb25fMTAwMTAyY19iZXR0ZXJsaXZpbmdfZXZnX2Jvb2tza3IQBxgB:S:ANO1ljKHquo&c=books">올 여름, 무더위에도 건강하게!</a>
+          </div>
+          <div id="seemore11">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFowCipwcm9tb3Rpb25fMTAwMTAyY19iZXR0ZXJsaXZpbmdfZXZnX2Jvb2tza3IQBxgB:S:ANO1ljKHquo&c=books"><button>더보기</button></a>
+          </div>
+        </div>
+        <div id="section_content11">
+          <div id="section_content11_bg">
+            <img src="https://lh3.ggpht.com/5dWpQPkx1JS2jGHfZrywAM9ga-ISrDsljYIBj8Xuco6CplNATYZjxuCqEIrIxQWNlmS7=h556-rw" height="289"/>
+          </div>
+          <div id="sec9_book1">
+            <div id="sec9_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EC%88%80%EB%A6%AC_%EB%A8%B9%EC%9C%BC%EB%A9%B4%EC%84%9C_%EC%82%B4_%EB%B9%BC%EB%8A%94_%EC%88%80%EB%A6%AC%EC%9D%98_%EC%9E%91%EC%8B%AC%EC%82%BC%EC%9D%BC_%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8?id=aVUSNB4dP2IC"><img src="https://encrypted.google.com/books/images/frontcover/aVUSNB4dP2IC?fife=w170-rw" alt="먹으면서 살 빼는 숀리의 작심삼일 다이어트" width="126"/></a>
+            </div>
+            <div id="sec9_book1_title"><a href="https://play.google.com/store/books/details/%EC%88%80%EB%A6%AC_%EB%A8%B9%EC%9C%BC%EB%A9%B4%EC%84%9C_%EC%82%B4_%EB%B9%BC%EB%8A%94_%EC%88%80%EB%A6%AC%EC%9D%98_%EC%9E%91%EC%8B%AC%EC%82%BC%EC%9D%BC_%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8?id=aVUSNB4dP2IC">먹으면서 살 빼는 숀리의 작심삼일 다이어트</a>
+            </div>
+            <div id="sec9_book1_author"><a href="https://play.google.com/store/books/author?id=%EC%88%80%EB%A6%AC">숀리</a>
+            </div>
+            <div id="sec9_book1_price">₩8,000</div>
+          </div>
+          <div id="sec9_book2">
+            <div id="sec9_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B2%8C%EB%A6%AC_%EB%88%8C_%EB%8B%B9%EB%87%A8%EC%97%90_%EB%8C%80%ED%95%9C_%EA%B1%B0%EC%9D%98_%EB%AA%A8%EB%93%A0_%EA%B2%83?id=9R5rAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/9R5rAwAAQBAJ?fife=w170-rw" alt="당뇨에 대한 거의 모든 것" width="126"/></a>
+            </div>
+            <div id="sec9_book2_title"><a href="https://play.google.com/store/books/details/%EA%B2%8C%EB%A6%AC_%EB%88%8C_%EB%8B%B9%EB%87%A8%EC%97%90_%EB%8C%80%ED%95%9C_%EA%B1%B0%EC%9D%98_%EB%AA%A8%EB%93%A0_%EA%B2%83?id=9R5rAwAAQBAJ">당뇨에 대한 거의 모든 것</a>
+            </div>
+            <div id="sec9_book2_author"><a href="https://play.google.com/store/books/author?id=%EA%B2%8C%EB%A6%AC+%EB%88%8C">게리 눌</a>
+            </div>
+            <div id="sec9_book2_price">₩11,000</div>
+          </div>
+          <div id="sec9_book3">
+            <div id="sec9_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EC%88%98%ED%94%BC_%ED%97%AC%EC%8A%A4%EC%9D%98_%EC%A0%95%EC%84%9D_%EC%A2%85%ED%95%A9%ED%8E%B8?id=2zafAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/2zafAwAAQBAJ?fife=w170-rw" alt="헬스의 정석_ 종합편" width="126"/></a>
+            </div>
+            <div id="sec9_book3_title"><a href="https://play.google.com/store/books/details/%EC%88%98%ED%94%BC_%ED%97%AC%EC%8A%A4%EC%9D%98_%EC%A0%95%EC%84%9D_%EC%A2%85%ED%95%A9%ED%8E%B8?id=2zafAwAAQBAJ">헬스의 정석_ 종합편</a>
+            </div>
+            <div id="sec9_book3_author"><a href="https://play.google.com/store/books/author?id=%EC%88%98%ED%94%BC">수피</a>
+            </div>
+            <div id="sec9_book3_price">₩12,000</div>
+          </div>
+          <div id="sec9_book4">
+            <div id="sec9_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EC%97%AC%EC%84%B1%EC%A1%B0%EC%84%A0_Star_s_Diet_%EC%97%AC%EB%B0%B0%EC%9A%B0%EB%93%A4%EC%9D%98_%EB%AA%85%ED%92%88_%EB%AA%B8%EB%A7%A4_%EB%B9%84%EA%B2%B0%EC%9D%80_%EC%9D%B4%EA%B2%83?id=YYESau2A-VkC"><img src="https://encrypted.google.com/books/images/frontcover/YYESau2A-VkC?fife=w170-rw" alt="Star’s Diet, 여배우들의 명품 몸매 비결은 이것!" width="126"/></a>
+            </div>
+            <div id="sec9_book4_title"><a href="https://play.google.com/store/books/details/%EC%97%AC%EC%84%B1%EC%A1%B0%EC%84%A0_Star_s_Diet_%EC%97%AC%EB%B0%B0%EC%9A%B0%EB%93%A4%EC%9D%98_%EB%AA%85%ED%92%88_%EB%AA%B8%EB%A7%A4_%EB%B9%84%EA%B2%B0%EC%9D%80_%EC%9D%B4%EA%B2%83?id=YYESau2A-VkC">Star’s Diet, 여배우들의 명품 몸매 비결은 이것!</a>
+            </div>
+            <div id="sec9_book4_author"><a href="https://play.google.com/store/books/author?id=%EC%97%AC%EC%84%B1%EC%A1%B0%EC%84%A0">여성조선</a></div>
+            <div id="sec9_book4_price">₩4,000</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션12: 무료 인기 도서>
+      <div id="listsection12">
+        <div id="section_top12">
+          <div id="sectiontitle12">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFonCiFwcm9tb3Rpb25fMTAwMGZmNl9uZXdmcmVlX2Jvb2tza3IQBxgB:S:ANO1ljJT4fw&c=books">무료 인기 도서</a>
+          </div>
+          <div id="sectionsubtitle12">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFonCiFwcm9tb3Rpb25fMTAwMGZmNl9uZXdmcmVlX2Jvb2tza3IQBxgB:S:ANO1ljJT4fw&c=books">여러분께 드리는 구글 플레이의 선물</a>
+          </div>
+          <div id="seemore12">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFonCiFwcm9tb3Rpb25fMTAwMGZmNl9uZXdmcmVlX2Jvb2tza3IQBxgB:S:ANO1ljJT4fw&c=books"><button>더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content12">
+          <div id="sec12_book1">
+            <div id="sec12_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9C%A4%EB%8F%99%EC%A3%BC_%ED%95%98%EB%8A%98%EA%B3%BC_%EB%B0%94%EB%9E%8C%EA%B3%BC_%EB%B3%84%EA%B3%BC_%EC%8B%9C?id=wx7rbaBCE2MC"><img src="https://encrypted.google.com/books/images/frontcover/wx7rbaBCE2MC?fife=w300-rw" alt="하늘과 바람과 별과 시" width="126"/></a>
+            </div>
+            <div id="sec12_book1_title"><a href="https://play.google.com/store/books/details/%EC%9C%A4%EB%8F%99%EC%A3%BC_%ED%95%98%EB%8A%98%EA%B3%BC_%EB%B0%94%EB%9E%8C%EA%B3%BC_%EB%B3%84%EA%B3%BC_%EC%8B%9C?id=wx7rbaBCE2MC">하늘과 바람과 별과 시</a>
+            </div>
+            <div id="sec12_book1_author"><a href="https://play.google.com/store/books/author?id=%EC%9C%A4%EB%8F%99%EC%A3%BC">윤동주</a>
+            </div>
+            <div id="sec12_book1_price">무료</div>
+          </div>
+          <div id="sec12_book2">
+            <div id="sec12_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EC%A0%95%EC%84%9C%EC%95%84_%EB%93%9C%EB%9D%BC%EB%A7%88_%EB%A1%9C%EB%A7%A8%EC%8A%A4_%EC%9A%B0%EB%A6%AC%EC%A7%91%EC%97%90%EB%8A%94_%EC%B2%9C%EC%82%AC%EA%B0%80_%EC%82%B0%EB%8B%A4_1%EA%B6%8C?id=BTvxAQAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/BTvxAQAAQBAJ?fife=w170-rw" alt="[드라마 로맨스] 우리집에는 천사가 산다 1권" width="126"/></a>
+            </div>
+            <div id="sec12_book2_title"><a href="https://play.google.com/store/books/details/%EC%A0%95%EC%84%9C%EC%95%84_%EB%93%9C%EB%9D%BC%EB%A7%88_%EB%A1%9C%EB%A7%A8%EC%8A%A4_%EC%9A%B0%EB%A6%AC%EC%A7%91%EC%97%90%EB%8A%94_%EC%B2%9C%EC%82%AC%EA%B0%80_%EC%82%B0%EB%8B%A4_1%EA%B6%8C?id=BTvxAQAAQBAJ">[드라마 로맨스] 우리집에는 천사가 산다 1권</a>
+            </div>
+            <div id="sec12_book2_author"><a href="https://play.google.com/store/books/author?id=%EC%A0%95%EC%84%9C%EC%95%84">정서아</a>
+            </div>
+            <div id="sec12_book2_price">무료</div>
+          </div>
+          <div id="sec12_book3">
+            <div id="sec12_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EB%B0%B1%EB%82%98%EB%9E%98_%EC%B9%B4%ED%8E%98%EC%B0%BD%EC%97%85_%EB%81%9D%ED%8C%90%EC%99%95_%EB%9D%BC%EB%96%BC%ED%82%B9_%EC%99%80%EC%82%AC%EB%B9%84%EB%9D%BC%EB%96%BC%EC%9D%98_%EA%B3%A0%ED%96%A5_%EB%9D%BC%EB%96%BC%ED%82%B9_%EC%8A%A4%ED%86%A0%EB%A6%AC?id=emKkyCxTV8oC"><img src="https://encrypted.google.com/books/images/frontcover/emKkyCxTV8oC?fife=w170-rw" alt="카페창업 끝판왕 라떼킹 - 와사비라떼의 고향 라떼킹 스토리" width="126"/></a>
+            </div>
+            <div id="sec12_book3_title"><a href="https://play.google.com/store/books/details/%EB%B0%B1%EB%82%98%EB%9E%98_%EC%B9%B4%ED%8E%98%EC%B0%BD%EC%97%85_%EB%81%9D%ED%8C%90%EC%99%95_%EB%9D%BC%EB%96%BC%ED%82%B9_%EC%99%80%EC%82%AC%EB%B9%84%EB%9D%BC%EB%96%BC%EC%9D%98_%EA%B3%A0%ED%96%A5_%EB%9D%BC%EB%96%BC%ED%82%B9_%EC%8A%A4%ED%86%A0%EB%A6%AC?id=emKkyCxTV8oC">카페창업 끝판왕 라떼킹 - 와사비라떼의 고향 라떼킹 스토리</a>
+            </div>
+            <div id="sec12_book3_author"><a href="https://play.google.com/store/books/author?id=%EB%B0%B1%EB%82%98%EB%9E%98">백나래</a>
+            </div>
+            <div id="sec12_book3_price">무료</div>
+          </div>
+          <div id="sec12_book4">
+            <div id="sec12_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B6%8C%EC%9A%94%ED%95%9C_%ED%8A%B9%EB%B3%84_%EB%AC%B4%EB%A3%8C%EA%B3%B5%EA%B0%9C_%ED%94%84%EB%9E%91%EC%8A%A4%EB%AC%B8%ED%99%94_%EB%92%A4%EC%A7%91%EC%96%B4_%EB%B3%B4%EA%B8%B0?id=SNVRY8W18A0C"><img src="https://encrypted.google.com/books/images/frontcover/SNVRY8W18A0C?fife=w170-rw" alt="[특별 무료공개] 프랑스문화 뒤집어 보기" width="126"/></a>
+            </div>
+            <div id="sec12_book4_title"><a href="https://play.google.com/store/books/details/%EA%B6%8C%EC%9A%94%ED%95%9C_%ED%8A%B9%EB%B3%84_%EB%AC%B4%EB%A3%8C%EA%B3%B5%EA%B0%9C_%ED%94%84%EB%9E%91%EC%8A%A4%EB%AC%B8%ED%99%94_%EB%92%A4%EC%A7%91%EC%96%B4_%EB%B3%B4%EA%B8%B0?id=SNVRY8W18A0C">[특별 무료공개] 프랑스문화 뒤집어 보기</a>
+            </div>
+            <div id="sec12_book4_author"><a href="https://play.google.com/store/books/author?id=%EA%B6%8C%EC%9A%94%ED%95%9C">권요한</a></div>
+            <div id="sec12_book4_price">무료</div>
+          </div>
+          <div id="sec12_book5">
+            <div id="sec12_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B0%95%EB%8F%99%EA%B2%BD%ED%9D%AC%EB%8C%80%ED%95%99%EA%B5%90%EB%B3%91%EC%9B%90_%EC%95%94_%EC%98%88%EB%B0%A9%EC%9D%84_%EC%9C%84%ED%95%9C_%EB%AA%85%EC%9D%98%EC%A7%80%EC%B9%A8%EC%84%9C?id=UROSAAAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/UROSAAAAQBAJ?fife=w170-rw" alt="암 예방을 위한 명의지침서" width="126"/></a>
+            </div>
+            <div id="sec12_book5_title"><a href="https://play.google.com/store/books/details/%EA%B0%95%EB%8F%99%EA%B2%BD%ED%9D%AC%EB%8C%80%ED%95%99%EA%B5%90%EB%B3%91%EC%9B%90_%EC%95%94_%EC%98%88%EB%B0%A9%EC%9D%84_%EC%9C%84%ED%95%9C_%EB%AA%85%EC%9D%98%EC%A7%80%EC%B9%A8%EC%84%9C?id=UROSAAAAQBAJ">암 예방을 위한 명의지침서</a>
+            </div>
+            <div id="sec12_book5_author"><a href="https://play.google.com/store/books/author?id=%EA%B0%95%EB%8F%99%EA%B2%BD%ED%9D%AC%EB%8C%80%ED%95%99%EA%B5%90%EB%B3%91%EC%9B%90">강동경희대학교병원</a>
+            </div>
+            <div id="sec12_book5_price">무료</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션13: 오늘의 특가 도서>
+      <div id="listsection13">
+        <div id="section_top13">
+          <div id="sectiontitle13">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFooCiJwcm9tb3Rpb25fMTAwMGZlMF9ib29rZGVhbHNfYm9va2tyEAcYAQ%3D%3D:S:ANO1ljJtPcM&c=books">오늘의 특가 도서</a>
+          </div>
+          <div id="sectionsubtitle13">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFooCiJwcm9tb3Rpb25fMTAwMGZlMF9ib29rZGVhbHNfYm9va2tyEAcYAQ%3D%3D:S:ANO1ljJtPcM&c=books">인기 도서만을 엄선, 최고 50% 할</a>
+          </div>
+          <div id="seemore13">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFooCiJwcm9tb3Rpb25fMTAwMGZlMF9ib29rZGVhbHNfYm9va2tyEAcYAQ%3D%3D:S:ANO1ljJtPcM&c=books"><button>더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content13">
+          <div id="sec13_book1">
+            <div id="sec13_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EB%B0%95%EA%B2%BD%EC%88%99_%EB%AC%B8%EC%A0%9C%EB%8A%94_%EB%AC%B4%EA%B8%B0%EB%A0%A5%EC%9D%B4%EB%8B%A4?id=D7mD1eAJrzoC"><img src="https://encrypted.google.com/books/images/frontcover/D7mD1eAJrzoC?fife=w170-rw" alt="문제는 무기력이다" width="126"/></a>
+            </div>
+            <div id="sec13_book1_title"><a href="https://play.google.com/store/books/details/%EB%B0%95%EA%B2%BD%EC%88%99_%EB%AC%B8%EC%A0%9C%EB%8A%94_%EB%AC%B4%EA%B8%B0%EB%A0%A5%EC%9D%B4%EB%8B%A4?id=D7mD1eAJrzoC">문제는 무기력이다</a>
+            </div>
+            <div id="sec13_book1_author"><a href="https://play.google.com/store/books/author?id=%EB%B0%95%EA%B2%BD%EC%88%99">박경숙</a>
+            </div>
+            <div id="sec13_book1_price">₩8,500</div>
+          </div>
+          <div id="sec13_book2">
+            <div id="sec13_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9D%BC%EB%A0%88%EC%9D%B8%EC%A0%9C%EC%9E%84%EC%8A%A4_%EC%9D%B8%EC%83%9D%EC%9D%84_%EB%8B%A8%EC%88%9C%ED%95%98%EA%B2%8C_%EC%82%AC%EB%8A%94_100%EA%B0%80%EC%A7%80_%EB%B0%A9%EB%B2%95?id=lsHcPC7_rX8C"><img src="https://encrypted.google.com/books/images/frontcover/lsHcPC7_rX8C?fife=w170-rw" alt="인생을 단순하게 사는 100가지 방법" width="126"/></a>
+            </div>
+            <div id="sec13_book2_title"><a href="https://play.google.com/store/books/details/%EC%9D%BC%EB%A0%88%EC%9D%B8%EC%A0%9C%EC%9E%84%EC%8A%A4_%EC%9D%B8%EC%83%9D%EC%9D%84_%EB%8B%A8%EC%88%9C%ED%95%98%EA%B2%8C_%EC%82%AC%EB%8A%94_100%EA%B0%80%EC%A7%80_%EB%B0%A9%EB%B2%95?id=lsHcPC7_rX8C">인생을 단순하게 사는 100가지 방법</a>
+            </div>
+            <div id="sec13_book2_author"><a href="https://play.google.com/store/books/author?id=%EC%9D%BC%EB%A0%88%EC%9D%B8%EC%A0%9C%EC%9E%84%EC%8A%A4">일레인 제임</a></div>
+            <div id="sec13_book2_price">₩9,600</div>
+          </div>
+          <div id="sec13_book3">
+            <div id="sec13_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EC%A1%B4_%EA%B7%B8%EB%A6%B0_%EC%9E%98%EB%AA%BB%EC%9D%80_%EC%9A%B0%EB%A6%AC%EB%B3%84%EC%97%90_%EC%9E%88%EC%96%B4?id=hPZ0JcqCgXcC"><img src="https://encrypted.google.com/books/images/frontcover/hPZ0JcqCgXcC?fife=w170-rw" alt="잘못은 우리별에 있어" width="126"/></a>
+            </div>
+            <div id="sec13_book3_title"><a href="https://play.google.com/store/books/details/%EC%A1%B4_%EA%B7%B8%EB%A6%B0_%EC%9E%98%EB%AA%BB%EC%9D%80_%EC%9A%B0%EB%A6%AC%EB%B3%84%EC%97%90_%EC%9E%88%EC%96%B4?id=hPZ0JcqCgXcC">잘못은 우리별에 있어</a>
+            </div>
+            <div id="sec13_book3_author"><a href="https://play.google.com/store/books/author?id=%EC%A1%B4+%EA%B7%B8%EB%A6%B0">존 그린</a>
+            </div>
+            <div id="sec13_book3_price">₩5,880</div>
+          </div>
+          <div id="sec13_book4">
+            <div id="sec13_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B3%A0%EC%B2%B4_%EC%8A%A4%EB%B0%80%EB%A0%88%ED%94%84%EC%8A%A4%ED%82%A4_%ED%94%84%EB%A1%9C%EC%9D%B4%ED%8A%B8%EC%9D%98_%EC%97%AC%EB%8F%99%EC%83%9D?id=VM6gAgAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/VM6gAgAAQBAJ?fife=w170-rw" alt="프로이트의 여동생" width="126"/></a>
+            </div>
+            <div id="sec13_book4_title"><a href="https://play.google.com/store/books/details/%EA%B3%A0%EC%B2%B4_%EC%8A%A4%EB%B0%80%EB%A0%88%ED%94%84%EC%8A%A4%ED%82%A4_%ED%94%84%EB%A1%9C%EC%9D%B4%ED%8A%B8%EC%9D%98_%EC%97%AC%EB%8F%99%EC%83%9D?id=VM6gAgAAQBAJ">프로이트의 여동생</a>
+            </div>
+            <div id="sec13_book4_author"><a href="https://play.google.com/store/books/author?id=%EA%B3%A0%EC%B2%B4+%EC%8A%A4%EB%B0%80%EB%A0%88%ED%94%84%EC%8A%A4%ED%82%A4">고체 스밀레프스키</a></div>
+            <div id="sec13_book4_price">₩8,060</div>
+          </div>
+          <div id="sec13_book5">
+            <div id="sec13_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EB%A7%88%EC%9D%B4%ED%81%B4_%EC%83%8C%EB%8D%B8_%EB%8F%88%EC%9C%BC%EB%A1%9C_%EC%82%B4_%EC%88%98_%EC%97%86%EB%8A%94_%EA%B2%83%EB%93%A4?id=Fx91nY4IY24C"><img src="https://encrypted.google.com/books/images/frontcover/Fx91nY4IY24C?fife=w300-rw" width="126"/></a>
+            </div>
+            <div id="sec13_book5_title"><a href="https://play.google.com/store/books/details/%EB%A7%88%EC%9D%B4%ED%81%B4_%EC%83%8C%EB%8D%B8_%EB%8F%88%EC%9C%BC%EB%A1%9C_%EC%82%B4_%EC%88%98_%EC%97%86%EB%8A%94_%EA%B2%83%EB%93%A4?id=Fx91nY4IY24C">돈으로 살 수 없는 것들</a>
+            </div>
+            <div id="sec13_book5_author"><a href="https://play.google.com/store/books/author?id=%EB%A7%88%EC%9D%B4%ED%81%B4+%EC%83%8C%EB%8D%B8">마이클 샌델</a>
+            </div>
+            <div id="sec13_book5_price">₩7,840</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션14: 짬 내서 읽기 좋은 책 모음>
+      <div id="listsection14">
+        <div id="section_top14">
+          <div id="sectiontitle14">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFouCihwcm9tb3Rpb25fMTAwMGY5Yl9lYXN5X3JlYWRzX2tvcl9ib29rc2tyEAcYAQ%3D%3D:S:ANO1ljLIuzE&c=books">짬 내서 읽기 좋은 책 모음</a>
+          </div>
+          <div id="sectionsubtitle14">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFouCihwcm9tb3Rpb25fMTAwMGY5Yl9lYXN5X3JlYWRzX2tvcl9ib29rc2tyEAcYAQ%3D%3D:S:ANO1ljLIuzE&c=books"></a>
+          </div>
+          <div id="seemore14">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFouCihwcm9tb3Rpb25fMTAwMGY5Yl9lYXN5X3JlYWRzX2tvcl9ib29rc2tyEAcYAQ%3D%3D:S:ANO1ljLIuzE&c=books"><button>더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content14">
+          <div id="sec14_book1">
+            <div id="sec14_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9D%B4%EC%9E%A5%EC%9A%B0_%E6%96%B0%EC%9D%BC%EB%B3%B8%EC%96%B4%EB%8A%A5%EB%A0%A5%EC%8B%9C%ED%97%98_%ED%95%9C%EB%B2%88%EC%97%90_%ED%8C%A8%EC%8A%A4%ED%95%98%EA%B8%B0_N1_%EC%B2%AD%ED%95%B4?id=CtaqAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/CtaqAwAAQBAJ?fife=w170-rw" alt="新일본어능력시험 한번에 패스하기 N1 청해" width="126"/></a>
+            </div>
+            <div id="sec14_book1_title"><a href="https://play.google.com/store/books/details/%EC%9D%B4%EC%9E%A5%EC%9A%B0_%E6%96%B0%EC%9D%BC%EB%B3%B8%EC%96%B4%EB%8A%A5%EB%A0%A5%EC%8B%9C%ED%97%98_%ED%95%9C%EB%B2%88%EC%97%90_%ED%8C%A8%EC%8A%A4%ED%95%98%EA%B8%B0_N1_%EC%B2%AD%ED%95%B4?id=CtaqAwAAQBAJ">新일본어능력시험 한번에 패스하기 N1 청해</a>
+            </div>
+            <div id="sec14_book1_author"><a href="https://play.google.com/store/books/author?id=%EC%9D%B4%EC%9E%A5%EC%9A%B0">이장우</a>
+            </div>
+            <div id="sec14_book1_price">₩8,400</div>
+          </div>
+          <div id="sec14_book2">
+            <div id="sec14_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EB%9D%BC%EB%9D%BC%EC%9C%88_%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C_%EC%97%B0%EC%95%A0%EC%A7%88_100%EC%9D%BC%ED%8E%B8?id=QgubqBtiZtQC"><img src="https://encrypted.google.com/books/images/frontcover/QgubqBtiZtQC?fife=w170-rw" alt="지속가능한 연애질 (100일편)" width="126"/></a>
+            </div>
+            <div id="sec14_book2_title"><a href="https://play.google.com/store/books/details/%EB%9D%BC%EB%9D%BC%EC%9C%88_%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C_%EC%97%B0%EC%95%A0%EC%A7%88_100%EC%9D%BC%ED%8E%B8?id=QgubqBtiZtQC">지속가능한 연애질 (100일편)</a>
+            </div>
+            <div id="sec14_book2_author"><a href="https://play.google.com/store/books/author?id=%EB%9D%BC%EB%9D%BC%EC%9C%88">라라윈</a>
+            </div>
+            <div id="sec14_book2_price">₩1,500</div>
+          </div>
+          <div id="sec14_book3">
+            <div id="sec14_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EC%98%A4%EC%98%81%EC%84%9D_who_%ED%9B%84%EC%8B%9C%EB%A6%AC%EC%A6%88_01_%EA%B9%80%EC%97%B0%EC%95%84?id=hiKqAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/hiKqAwAAQBAJ?fife=w170-rw" alt="who? 후시리즈 01 김연아: 한국사 01" width="126"/></a>
+            </div>
+            <div id="sec14_book3_title"><a href="https://play.google.com/store/books/details/%EC%98%A4%EC%98%81%EC%84%9D_who_%ED%9B%84%EC%8B%9C%EB%A6%AC%EC%A6%88_01_%EA%B9%80%EC%97%B0%EC%95%84?id=hiKqAwAAQBAJ">who? 후시리즈 01 김연아: 한국사 01</a>
+            </div>
+            <div id="sec14_book3_author"><a href="https://play.google.com/store/books/author?id=%EC%98%A4%EC%98%81%EC%84%9D">오영석</a>
+            </div>
+            <div id="sec14_book3_price">₩4,900</div>
+          </div>
+          <div id="sec14_book4">
+            <div id="sec14_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EC%B5%9C%EC%8A%B9%EC%A3%BC_%EC%B6%94%EC%96%B5%EC%9D%84_%EA%BC%AD%EA%BC%AD_%EB%8B%B4%EC%9D%80_%EB%B0%A5%EC%83%81?id=MPyqAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/MPyqAwAAQBAJ?fife=w170-rw" alt="추억을 꼭꼭 담은 밥상" width="126"/></a>
+            </div>
+            <div id="sec14_book4_title"><a href="https://play.google.com/store/books/details/%EC%B5%9C%EC%8A%B9%EC%A3%BC_%EC%B6%94%EC%96%B5%EC%9D%84_%EA%BC%AD%EA%BC%AD_%EB%8B%B4%EC%9D%80_%EB%B0%A5%EC%83%81?id=MPyqAwAAQBAJ">추억을 꼭꼭 담은 밥상</a>
+            </div>
+            <div id="sec14_book4_author"><a href="https://play.google.com/store/books/author?id=%EC%B5%9C%EC%8A%B9%EC%A3%BC">최승주</a></div>
+            <div id="sec14_book4_price">₩6,500</div>
+          </div>
+          <div id="sec14_book5">
+            <div id="sec14_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9C%A0%ED%95%98%EC%9D%B4_%ED%95%98%EB%A3%A8_5%EB%B6%84_%EC%98%81%EC%96%B4_%EB%AA%85%EC%96%B8%EC%9C%BC%EB%A1%9C_%EC%9A%B4%EB%AA%85%EC%9D%84_%EB%B0%94%EA%BE%BC%EB%8B%A4?id=7aqrAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/7aqrAwAAQBAJ?fife=w170-rw" alt="하루 5분, 영어 명언으로 운명을 바꾼다" width="126"/></a>
+            </div>
+            <div id="sec14_book5_title"><a href="https://play.google.com/store/books/details/%EC%9C%A0%ED%95%98%EC%9D%B4_%ED%95%98%EB%A3%A8_5%EB%B6%84_%EC%98%81%EC%96%B4_%EB%AA%85%EC%96%B8%EC%9C%BC%EB%A1%9C_%EC%9A%B4%EB%AA%85%EC%9D%84_%EB%B0%94%EA%BE%BC%EB%8B%A4?id=7aqrAwAAQBAJ">하루 5분, 영어 명언으로 운명을 바꾼다</a>
+            </div>
+            <div id="sec14_book5_author"><a href="https://play.google.com/store/books/author?id=%EC%9C%A0%ED%95%98%EC%9D%B4">유하이</a>
+            </div>
+            <div id="sec14_book5_price">₩1,000</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션15: 주목해야 할 신간 소설>
+      <div id="listsection15">
+        <div id="section_top15">
+          <div id="sectiontitle15">
+            <a href="https://play.google.com/store/books/collection/promotion_1000f8f_kr_newfic_evg_bookskr">주목해야 할 신간 소설</a>
+          </div>
+          <div id="sectionsubtitle15">
+            <a href="https://play.google.com/store/books/collection/promotion_1000f8f_kr_newfic_evg_bookskr"></a>
+          </div>
+          <div id="seemore15">
+            <a href="https://play.google.com/store/books/collection/promotion_1000f8f_kr_newfic_evg_bookskr"><button>더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content15">
+          <div id="sec15_book1">
+            <div id="sec15_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EB%84%AC%EB%A0%88_%EB%85%B8%EC%9D%B4%ED%95%98%EC%9A%B0%EC%8A%A4_%EC%83%81%EC%96%B4%EC%9D%98_%EB%8F%84%EC%8B%9C_1_2%EA%B6%8C_%EC%9D%B4%EB%B2%A4%ED%8A%B8_%ED%95%A9%EB%B3%B8?id=kN0EBAAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/kN0EBAAAQBAJ?fife=w170-rw" alt="상어의 도시 1 [+2권 이벤트 합본]" width="126"/></a>
+            </div>
+            <div id="sec15_book1_title"><a href="https://play.google.com/store/books/details/%EB%84%AC%EB%A0%88_%EB%85%B8%EC%9D%B4%ED%95%98%EC%9A%B0%EC%8A%A4_%EC%83%81%EC%96%B4%EC%9D%98_%EB%8F%84%EC%8B%9C_1_2%EA%B6%8C_%EC%9D%B4%EB%B2%A4%ED%8A%B8_%ED%95%A9%EB%B3%B8?id=kN0EBAAAQBAJ">상어의 도시 1 [+2권 이벤트 합본]</a>
+            </div>
+            <div id="sec15_book1_author"><a href="https://play.google.com/store/books/author?id=%EB%84%AC%EB%A0%88+%EB%85%B8%EC%9D%B4%ED%95%98%EC%9A%B0%EC%8A%A4">넬레 노이하우스</a>
+            </div>
+            <div id="sec15_book1_price">₩6,900</div>
+          </div>
+          <div id="sec15_book2">
+            <div id="sec15_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EC%A1%B4_%EA%B7%B8%EB%A6%B0_%EC%9E%98%EB%AA%BB%EC%9D%80_%EC%9A%B0%EB%A6%AC%EB%B3%84%EC%97%90_%EC%9E%88%EC%96%B4?id=hPZ0JcqCgXcC"><img src="https://encrypted.google.com/books/images/frontcover/hPZ0JcqCgXcC?fife=w170-rw" alt="잘못은 우리별에 있어" width="126"/></a>
+            </div>
+            <div id="sec15_book2_title"><a href="https://play.google.com/store/books/details/%EC%A1%B4_%EA%B7%B8%EB%A6%B0_%EC%9E%98%EB%AA%BB%EC%9D%80_%EC%9A%B0%EB%A6%AC%EB%B3%84%EC%97%90_%EC%9E%88%EC%96%B4?id=hPZ0JcqCgXcC">잘못은 우리별에 있어</a>
+            </div>
+            <div id="sec15_book2_author"><a href="https://play.google.com/store/books/author?id=%EC%A1%B4+%EA%B7%B8%EB%A6%B0">존 그린</a>
+            </div>
+            <div id="sec15_book2_price">₩5,880</div>
+          </div>
+          <div id="sec15_book3">
+            <div id="sec15_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EC%84%B1%EC%84%9D%EC%A0%9C_%ED%88%AC%EB%AA%85%EC%9D%B8%EA%B0%84?id=n53tAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/n53tAwAAQBAJ?fife=w170-rw" alt="투명인간: 성석제 장편소설" width="126"/></a>
+            </div>
+            <div id="sec15_book3_title"><a href="https://play.google.com/store/books/details/%EC%84%B1%EC%84%9D%EC%A0%9C_%ED%88%AC%EB%AA%85%EC%9D%B8%EA%B0%84?id=n53tAwAAQBAJ">투명인간: 성석제 장편소설</a>
+            </div>
+            <div id="sec15_book3_author"><a href="https://play.google.com/store/books/author?id=%EC%84%B1%EC%84%9D%EC%A0%9C+">성석제</a>
+            </div>
+            <div id="sec15_book3_price">₩8,400</div>
+          </div>
+          <div id="sec15_book4">
+            <div id="sec15_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B9%80%EC%95%A0%EB%9E%80_%EB%91%90%EA%B7%BC%EB%91%90%EA%B7%BC_%EB%82%B4_%EC%9D%B8%EC%83%9D?id=uRLEAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/uRLEAwAAQBAJ?fife=w170-rw" alt="두근두근 내 인생" width="126"/></a>
+            </div>
+            <div id="sec15_book4_title"><a href="https://play.google.com/store/books/details/%EA%B9%80%EC%95%A0%EB%9E%80_%EB%91%90%EA%B7%BC%EB%91%90%EA%B7%BC_%EB%82%B4_%EC%9D%B8%EC%83%9D?id=uRLEAwAAQBAJ">두근두근 내 인생</a>
+            </div>
+            <div id="sec15_book4_author"><a href="https://play.google.com/store/books/author?id=%EA%B9%80%EC%95%A0%EB%9E%80">김애란</a></div>
+            <div id="sec15_book4_price">₩7,700</div>
+          </div>
+          <div id="sec15_book5">
+            <div id="sec15_book5_cover">
+              <a href="https://play.google.com/store/books/details/%ED%95%9C%EA%B0%95_%EC%86%8C%EB%85%84%EC%9D%B4_%EC%98%A8%EB%8B%A4?id=Dp7tAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/Dp7tAwAAQBAJ?fife=w170-rw" alt="소년이 온다" width="126"/></a>
+            </div>
+            <div id="sec15_book5_title"><a href="https://play.google.com/store/books/details/%ED%95%9C%EA%B0%95_%EC%86%8C%EB%85%84%EC%9D%B4_%EC%98%A8%EB%8B%A4?id=Dp7tAwAAQBAJ">소년이 온다</a>
+            </div>
+            <div id="sec15_book5_author"><a href="https://play.google.com/store/books/author?id=%ED%95%9C%EA%B0%95">한강</a>
+            </div>
+            <div id="sec15_book5_price">₩8,400</div>
+          </div>
+        </div>
+      </div>
+      <!섹션16: 주목해야 할 신간 비소설>
+      <div id="listsection16">
+        <div id="section_top16">
+          <div id="sectiontitle16">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFoqCiRwcm9tb3Rpb25fMTAwMGY3ZF9rb3Jfbm9uZmljX2Jvb2tza3IQBxgB:S:ANO1ljJY-Ok&c=books">주목해야 할 신간 비소설</a>
+          </div>
+          <div id="sectionsubtitle16">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFoqCiRwcm9tb3Rpb25fMTAwMGY3ZF9rb3Jfbm9uZmljX2Jvb2tza3IQBxgB:S:ANO1ljJY-Ok&c=books"></a>
+          </div>
+          <div id="seemore16">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFoqCiRwcm9tb3Rpb25fMTAwMGY3ZF9rb3Jfbm9uZmljX2Jvb2tza3IQBxgB:S:ANO1ljJY-Ok&c=books"><button>더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content16">
+          <div id="sec16_book1">
+            <div id="sec16_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%97%AC%ED%96%89%ED%95%98%EA%B3%A0_%EC%82%AC%EB%9E%91%ED%95%98%EA%B3%A0_%EA%B3%A0%EC%96%91%EC%9D%B4%ED%95%98%EB%9D%BC?id=Crf-AwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/Crf-AwAAQBAJ?fife=w170-rw" alt="여행하고 사랑하고 고양이하라" width="126"/></a>
+            </div>
+            <div id="sec16_book1_title"><a href="https://play.google.com/store/books/details/%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%97%AC%ED%96%89%ED%95%98%EA%B3%A0_%EC%82%AC%EB%9E%91%ED%95%98%EA%B3%A0_%EA%B3%A0%EC%96%91%EC%9D%B4%ED%95%98%EB%9D%BC?id=Crf-AwAAQBAJ">여행하고 사랑하고 고양이하라</a>
+            </div>
+            <div id="sec16_book1_author"><a href="https://play.google.com/store/books/author?id=%EC%9D%B4%EC%9A%A9%ED%95%9C">이용한</a>
+            </div>
+            <div id="sec16_book1_price">₩10,500</div>
+          </div>
+          <div id="sec16_book2">
+            <div id="sec16_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EB%8B%88%EC%BD%9C%EB%9D%BC%EC%8A%A4_%EB%A1%9C%EB%B2%A8_%EB%AA%A8%EB%91%90%EC%97%90%EA%B2%8C_%EC%A3%BC%EA%B3%A0_%EC%8A%88%ED%8D%BC%ED%8C%AC%EC%97%90%EA%B2%8C_%ED%8C%94%EC%95%84%EB%9D%BC?id=Ubb-AwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/Ubb-AwAAQBAJ?fife=w170-rw" alt="모두에게 주고 슈퍼맨에게 팔아라" width="126"/></a>
+            </div>
+            <div id="sec16_book2_title"><a href="https://play.google.com/store/books/details/%EB%8B%88%EC%BD%9C%EB%9D%BC%EC%8A%A4_%EB%A1%9C%EB%B2%A8_%EB%AA%A8%EB%91%90%EC%97%90%EA%B2%8C_%EC%A3%BC%EA%B3%A0_%EC%8A%88%ED%8D%BC%ED%8C%AC%EC%97%90%EA%B2%8C_%ED%8C%94%EC%95%84%EB%9D%BC?id=Ubb-AwAAQBAJ">모두에게 주고 슈퍼맨에게 팔아라</a>
+            </div>
+            <div id="sec16_book2_author"><a href="https://play.google.com/store/books/author?id=%EB%8B%88%EC%BD%9C%EB%9D%BC%EC%8A%A4+%EB%A1%9C%EB%B2%A8">니콜라스 로벨</a>
+            </div>
+            <div id="sec16_book2_price">₩11,200</div>
+          </div>
+          <div id="sec16_book3">
+            <div id="sec16_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B9%80%EC%98%81%EB%AF%BC_%EC%95%BC%EB%A7%88%EC%B9%B4%EC%8B%9C?id=um7zAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/um7zAwAAQBAJ?fife=w170-rw" alt="야마카시" width="126"/></a>
+            </div>
+            <div id="sec16_book3_title"><a href="https://play.google.com/store/books/details/%EA%B9%80%EC%98%81%EB%AF%BC_%EC%95%BC%EB%A7%88%EC%B9%B4%EC%8B%9C?id=um7zAwAAQBAJ">야마카시</a>
+            </div>
+            <div id="sec16_book3_author"><a href="https://play.google.com/store/books/author?id=%EA%B9%80%EC%98%81%EB%AF%BC">김영민</a>
+            </div>
+            <div id="sec16_book3_price">₩9,000</div>
+          </div>
+          <div id="sec16_book4">
+            <div id="sec16_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9E%84%EC%9B%90%ED%99%94_%ED%95%98%EB%A3%A8_10%EB%B6%84_%EB%8F%85%EC%84%9C%EC%9D%98_%ED%9E%98?id=4THzAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/4THzAwAAQBAJ?fife=w170-rw" alt="하루 10분 독서의 힘" width="126"/></a>
+            </div>
+            <div id="sec16_book4_title"><a href="https://play.google.com/store/books/details/%EC%9E%84%EC%9B%90%ED%99%94_%ED%95%98%EB%A3%A8_10%EB%B6%84_%EB%8F%85%EC%84%9C%EC%9D%98_%ED%9E%98?id=4THzAwAAQBAJ">하루 10분 독서의 힘</a>
+            </div>
+            <div id="sec16_book4_author"><a href="https://play.google.com/store/books/author?id=%EC%9E%84%EC%9B%90%ED%99%94">임원화</a></div>
+            <div id="sec16_book4_price">₩9,600</div>
+          </div>
+          <div id="sec16_book5">
+            <div id="sec16_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EB%A6%AC%EC%B0%A8%EB%93%9C_%EC%B9%B4%EB%AA%A8%EB%82%98_%EB%91%90%EB%87%8C_%ED%98%81%EB%AA%85_30%EC%9D%BC?id=hVDzAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/hVDzAwAAQBAJ?fife=w170-rw" alt="두뇌 혁명 30일" width="126"/></a>
+            </div>
+            <div id="sec16_book5_title"><a href="https://play.google.com/store/books/details/%EB%A6%AC%EC%B0%A8%EB%93%9C_%EC%B9%B4%EB%AA%A8%EB%82%98_%EB%91%90%EB%87%8C_%ED%98%81%EB%AA%85_30%EC%9D%BC?id=hVDzAwAAQBAJ">두뇌 혁명 30일</a>
+            </div>
+            <div id="sec16_book5_author"><a href="https://play.google.com/store/books/author?id=%EB%A6%AC%EC%B0%A8%EB%93%9C+%EC%B9%B4%EB%AA%A8%EB%82%98">리차드 카모나</a>
+            </div>
+            <div id="sec16_book5_price">₩11,000</div>
+          </div>
+        </div>
+      </div>
+      <! 섹션17: 인기 만화 모음>
+      <div id="listsection17">
+        <div id="section_top17">
+          <div id="sectiontitle17">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFonCiFwcm9tb3Rpb25fMTAwMGIwM19jb21pY19saXN0XzIwMTMQBxgB:S:ANO1ljILp98&c=books">인기 만화 모음</a>
+          </div>
+          <div id="sectionsubtitle17">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFonCiFwcm9tb3Rpb25fMTAwMGIwM19jb21pY19saXN0XzIwMTMQBxgB:S:ANO1ljILp98&c=books"></a>
+          </div>
+          <div id="seemore17">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFonCiFwcm9tb3Rpb25fMTAwMGIwM19jb21pY19saXN0XzIwMTMQBxgB:S:ANO1ljILp98&c=books"><button>더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content17">
+          <div id="sec17_book1">
+            <div id="sec17_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B9%80%EC%84%B8%EC%98%81_Kiss_me_%ED%94%84%EB%A6%B0%EC%84%B8%EC%8A%A4_%ED%82%A4%EC%8A%A4%EB%AF%B8%ED%94%84%EB%A6%B0%EC%84%B8%EC%8A%A4?id=wainAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/wainAwAAQBAJ?fife=w300-rw" alt="Kiss me 프린세스" width="126"/></a>
+            </div>
+            <div id="sec17_book1_title"><a href="https://play.google.com/store/books/details/%EA%B9%80%EC%84%B8%EC%98%81_Kiss_me_%ED%94%84%EB%A6%B0%EC%84%B8%EC%8A%A4_%ED%82%A4%EC%8A%A4%EB%AF%B8%ED%94%84%EB%A6%B0%EC%84%B8%EC%8A%A4?id=wainAwAAQBAJ">Kiss me 프린세스</a>
+            </div>
+            <div id="sec17_book1_author"><a href="https://play.google.com/store/books/author?id=%EA%B9%80%EC%84%B8%EC%98%81">김세영</a>
+            </div>
+            <div id="sec17_book1_price">무료</div>
+          </div>
+          <div id="sec17_book2">
+            <div id="sec17_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EA%B9%80%EB%B6%80%EC%9D%BC_%EB%8F%88%EC%9D%98_%EB%85%B8%EC%98%88?id=k5L3AwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/k5L3AwAAQBAJ?fife=w300-rw" alt="돈의 노예:1화" width="126"/></a>
+            </div>
+            <div id="sec17_book2_title"><a href="https://play.google.com/store/books/details/%EA%B9%80%EB%B6%80%EC%9D%BC_%EB%8F%88%EC%9D%98_%EB%85%B8%EC%98%88?id=k5L3AwAAQBAJ">돈의 노예:1화</a>
+            </div>
+            <div id="sec17_book2_author"><a href="https://play.google.com/store/books/author?id=%EA%B9%80%EB%B6%80%EC%9D%BC">김부일</a>
+            </div>
+            <div id="sec17_book2_price">무료</div>
+          </div>
+          <div id="sec17_book3">
+            <div id="sec17_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EC%A7%80%EC%99%84_%EA%B7%B8%EB%9E%98%EC%84%9C_%EB%82%98%EB%8A%94_%EC%95%88%ED%8B%B0%ED%8C%AC%EA%B3%BC_%EA%B2%B0%ED%98%BC%ED%96%88%EB%8B%A4?id=oQPzAwAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/oQPzAwAAQBAJ?fife=w300-rw" alt="그래서 나는 안티팬과 결혼했다: 1화" width="126"/></a>
+            </div>
+            <div id="sec17_book3_title"><a href="https://play.google.com/store/books/details/%EC%A7%80%EC%99%84_%EA%B7%B8%EB%9E%98%EC%84%9C_%EB%82%98%EB%8A%94_%EC%95%88%ED%8B%B0%ED%8C%AC%EA%B3%BC_%EA%B2%B0%ED%98%BC%ED%96%88%EB%8B%A4?id=oQPzAwAAQBAJ">그래서 나는 안티팬과 결혼했다: 1화</a>
+            </div>
+            <div id="sec17_book3_author"><a href="https://play.google.com/store/books/author?id=%EC%A7%80%EC%99%84">지완</a>
+            </div>
+            <div id="sec17_book3_price">무료</div>
+          </div>
+          <div id="sec17_book4">
+            <div id="sec17_book4_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9E%84%EC%9E%AC%EC%9B%90_%EC%A7%B1_1%EA%B6%8C?id=C5D5mJnVbncC"><img src="https://encrypted.google.com/books/images/frontcover/C5D5mJnVbncC?fife=w300-rw" alt="짱 1권" width="126"/></a>
+            </div>
+            <div id="sec17_book4_title"><a href="https://play.google.com/store/books/details/%EC%9E%84%EC%9E%AC%EC%9B%90_%EC%A7%B1_1%EA%B6%8C?id=C5D5mJnVbncC">짱 1권</a>
+            </div>
+            <div id="sec17_book4_author"><a href="https://play.google.com/store/books/author?id=%EC%9E%84%EC%9E%AC%EC%9B%90">임재원</a></div>
+            <div id="sec17_book4_price">₩2,500</div>
+          </div>
+          <div id="sec17_book5">
+            <div id="sec17_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EC%9E%84%EC%A3%BC%EC%97%B0_%EC%94%A8%EC%97%98_1%EA%B6%8C?id=b1XZRySyviAC"><img src="https://encrypted.google.com/books/images/frontcover/b1XZRySyviAC?fife=w300-rw" alt="씨엘 1권" width="126"/></a>
+            </div>
+            <div id="sec17_book5_title"><a href="https://play.google.com/store/books/details/%EC%9E%84%EC%A3%BC%EC%97%B0_%EC%94%A8%EC%97%98_1%EA%B6%8C?id=b1XZRySyviAC">씨엘 1권</a>
+            </div>
+            <div id="sec17_book5_author"><a href="https://play.google.com/store/books/author?id=%EC%9E%84%EC%A3%BC%EC%97%B0">임주연</a>
+            </div>
+            <div id="sec17_book5_price">₩2,500</div>
+          </div>
+        </div>
+      </div>
+      <!섹션18: 신경숙 특집전>
+      <div id="listsection18">
+        <div id="section_top18">
+          <div id="sectiontitle18">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFoqCiRwcm9tb3Rpb25fMTAwMGZlMV9hdXRob3JmdWN1c19ib29ra3IQBxgB:S:ANO1ljIU9jg&c=books">작가 '신경숙'특집전</a>
+          </div>
+          <div id="sectionsubtitle18">
+            <a href="https://play.google.com/store/recommended?sp=CAUwAFoqCiRwcm9tb3Rpb25fMTAwMGZlMV9hdXRob3JmdWN1c19ib29ra3IQBxgB:S:ANO1ljIU9jg&c=books">신경숙,그녀의 소설을 조명하다</a>
+          </div>
+          <div id="seemore1다8">
+            <a href="https://play.google.com/store/books/collection/promotion_1001065_toppaid_bookkr"><button>더보기</button></a>
+          </div>
+        </div>
+        <!섹션에 해당하는 책 목록>
+        <div id="section_content18">
+          <div id="sec18_book1">
+            <div id="sec18_book1_cover">
+              <a href="https://play.google.com/store/books/details/%EC%8B%A0%EA%B2%BD%EC%88%99_%EC%96%B4%EB%94%94%EC%84%A0%EA%B0%80_%EB%82%98%EB%A5%BC_%EC%B0%BE%EB%8A%94_%EC%A0%84%ED%99%94%EB%B2%A8%EC%9D%B4_%EC%9A%B8%EB%A6%AC%EA%B3%A0?id=xbqFAAAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/xbqFAAAAQBAJ?fife=w300-rw" alt="어디선가 나를 찾는 전화벨이 울리고" width="126"/></a>
+            </div>
+            <div id="sec18_book1_title"><a href="https://play.google.com/store/books/details/%EC%8B%A0%EA%B2%BD%EC%88%99_%EC%96%B4%EB%94%94%EC%84%A0%EA%B0%80_%EB%82%98%EB%A5%BC_%EC%B0%BE%EB%8A%94_%EC%A0%84%ED%99%94%EB%B2%A8%EC%9D%B4_%EC%9A%B8%EB%A6%AC%EA%B3%A0?id=xbqFAAAAQBAJ">어디선가 나를 찾는 전화벨이 울리고</a>
+            </div>
+            <div id="sec18_book1_author"><a href="https://play.google.com/store/books/author?id=%EC%8B%A0%EA%B2%BD%EC%88%99">신경숙</a>
+            </div>
+            <div id="sec18_book1_price">₩6,900</div>
+          </div>
+          <div id="sec18_book2">
+            <div id="sec18_book2_cover">
+              <a href="https://play.google.com/store/books/details/%EC%8B%A0%EA%B2%BD%EC%88%99_%EB%8B%AC%EC%97%90%EA%B2%8C_%EB%93%A4%EB%A0%A4%EC%A3%BC%EA%B3%A0_%EC%8B%B6%EC%9D%80_%EC%9D%B4%EC%95%BC%EA%B8%B0?id=Sdw1AAAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/Sdw1AAAAQBAJ?fife=w300-rw" alt="달에게 들려주고 싶은 이야기" width="126"/></a>
+            </div>
+            <div id="sec18_book2_title"><a href="https://play.google.com/store/books/details/%EC%8B%A0%EA%B2%BD%EC%88%99_%EB%8B%AC%EC%97%90%EA%B2%8C_%EB%93%A4%EB%A0%A4%EC%A3%BC%EA%B3%A0_%EC%8B%B6%EC%9D%80_%EC%9D%B4%EC%95%BC%EA%B8%B0?id=Sdw1AAAAQBAJ">달에게 들려주고 싶은 이야기</a>
+            </div>
+            <div id="sec18_book2_author"><a href="https://play.google.com/store/books/author?id=%EC%8B%A0%EA%B2%BD%EC%88%99">신경숙</a>
+            </div>
+            <div id="sec18_book2_price">₩7,200</div>
+          </div>
+          <div id="sec18_book3">
+            <div id="sec18_book3_cover">
+              <a href="https://play.google.com/store/books/details/%EC%8B%A0%EA%B2%BD%EC%88%99_%EC%99%B8%EB%94%B4%EB%B0%A9?id=BQyGAAAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/BQyGAAAAQBAJ?fife=w300-rw" alt="외딴방" width="126"/></a>
+            </div>
+            <div id="sec18_book3_title"><a href="https://play.google.com/store/books/details/%EC%8B%A0%EA%B2%BD%EC%88%99_%EC%99%B8%EB%94%B4%EB%B0%A9?id=BQyGAAAAQBAJ">외딴방</a>
+            </div>
+            <div id="sec18_book3_author"><a href="https://play.google.com/store/books/author?id=%EC%8B%A0%EA%B2%BD%EC%88%99">신경숙</a>
+            </div>
+            <div id="sec18_book3_price">₩7,200</div>
+          </div>
+          <div id="sec18_book4">
+            <div id="sec18_book4_cover">
+              <a href="https://encrypted.google.com/books/images/frontcover/SYyFAAAAQBAJ?fife=w300-rw" alt="깊은 슬픔" width="126"/></a>
+            </div>
+            <div id="sec18_book4_title"><a href="https://play.google.com/store/books/details/%EC%8B%A0%EA%B2%BD%EC%88%99_%EA%B9%8A%EC%9D%80_%EC%8A%AC%ED%94%94?id=SYyFAAAAQBAJ">깊은 슬픔</a>
+            </div>
+            <div id="sec18_book4_author"><a href="https://play.google.com/store/books/author?id=%EC%8B%A0%EA%B2%BD%EC%88%99">신경숙</a></div>
+            <div id="sec18_book4_price">₩8,880</div>
+          </div>
+          <div id="sec18_book5">
+            <div id="sec18_book5_cover">
+              <a href="https://play.google.com/store/books/details/%EC%8B%A0%EA%B2%BD%EC%88%99_%EC%A2%85%EC%86%8C%EB%A6%AC?id=IRiGAAAAQBAJ"><img src="https://encrypted.google.com/books/images/frontcover/IRiGAAAAQBAJ?fife=w300-rw" alt="종소리" width="126"/></a>
+            </div>
+            <div id="sec18_book5_title"><a href="https://play.google.com/store/books/details/%EC%8B%A0%EA%B2%BD%EC%88%99_%EC%A2%85%EC%86%8C%EB%A6%AC?id=IRiGAAAAQBAJ">종소리</a>
+            </div>
+            <div id="sec18_book5_author"><a href="https://play.google.com/store/books/author?id=%EC%8B%A0%EA%B2%BD%EC%88%99">신경숙</a>
+            </div>
+            <div id="sec18_book5_price">₩7,200</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <! 하단에 사이트 관련 링크모음>
+    <div id="footer_links">
+      <ul>
+        <li>@2014 Google</li>
+        <li><a href="https://play.google.com/intl/ko_kr/about/play-terms.html">사이트 서비스 약관</a></li>
+        <li><a href="https://play.google.com/intl/ko_kr/about/device-terms.html">기기 판매약관</a></li>
+        <li><a href="https://support.google.com/googleplay/bin/answer.py?answer=1196018&hl=ko&authuser=0">개인정보취급방침</a></li>
+        <li><a href="http://developer.android.com/index.html">개발자</a></li>
+      </ul>
+    </div>
+    <! 하단에 회사정보>
+    <div id="footer_info">상호명: Google Inc. | 대표자: Eric Schmidt | 주소: 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States | 대표전화: +1 650-253-0000 | <a href="https://support.google.com/googleplay/?hl=ko&hlrm=en">도움말</a> | 이메일: <a href="mailto:gpk-usersupport@google.com">gpk-usersupport@google.com</a>
+      <! mailto: 는 이메일링크를 만들어주는 태그이다.>
+    </div>
+    <div id="footer_message">구글 플레이에 등록된 앱과 게임은 개발자들이 제공하고 판매하는 것이며, 구글은 개발자가 아닌 이상 등록한 상품 정보 및 거래에 대한 어떠한 책임도 지지 않습니다.</div>
+  </div>
+</body>
+</html>
